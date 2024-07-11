@@ -4,10 +4,12 @@ const CursorContext = createContext();
 
 const CursorFollower = ({ children }) => {
   const [position, setPosition] = useState({ x: -9999, y: -9999 });
+  const [isTouchingLink, setIsTouchingLink] = useState(false);
 
   const handleMouseMove = (event) => {
     setPosition({ x: event.clientX, y: event.clientY });
   };
+
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
 
@@ -16,10 +18,14 @@ const CursorFollower = ({ children }) => {
     };
   }, []);
 
+  const value = {
+    position,
+    isTouchingLink,
+    setIsTouchingLink,
+  };
+
   return (
-    <CursorContext.Provider value={{ position }}>
-      {children}
-    </CursorContext.Provider>
+    <CursorContext.Provider value={value}>{children}</CursorContext.Provider>
   );
 };
 

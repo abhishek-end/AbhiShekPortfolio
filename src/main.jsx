@@ -6,7 +6,8 @@ import "./index.css";
 import CursorFollower from "./pages/useCursor.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <CursorFollower>
+  <React.StrictMode>
     <App />
-  </CursorFollower>
+  </React.StrictMode>
 );
+  

@@ -1,5 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@font-face {
+  font-family: "Eleven Twenty";
+  src: url("src/assets/11.20___.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* styles.css */
+@keyframes underline-from-left {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust as needed */
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust as needed */
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+/* Example custom CSS */
+.text-stroke {
+  /* Create a text stroke with a width of 1px and color white */
+  -webkit-text-stroke: 2px #eee;
+  text-stroke: 1px white; /* For non-WebKit browsers */
+}
+.text {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  animation: rotateT 10s linear infinite;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+@keyframes rotateT {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.text span {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  font-family: "Oswald";
+  transform-origin: 0 125px;
+}

@@ -5,6 +5,12 @@ export default {
     extend: {
       fontFamily: {
         gugi: ["Gugi", "cursive"],
+        oswald: ["Oswald , cursive"],
+        eleventwenty: ['"Eleven Twenty"', "sans-serif"],
+      },
+      colors: {
+        aquamarine: "#7FFFD4",
+        mediumpurple: "#9370DB",
       },
     },
   },

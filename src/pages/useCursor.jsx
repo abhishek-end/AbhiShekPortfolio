@@ -3,7 +3,7 @@ import React, { createContext, useState, useEffect, useContext } from "react";
 const CursorContext = createContext();
 
 const CursorFollower = ({ children }) => {
-  const [position, setPosition] = useState({ x: -9999, y: -9999 });
+  const [position, setPosition] = useState({ x: 684, y: 510 });
   const [isTouchingLink, setIsTouchingLink] = useState(false);
 
   const handleMouseMove = (event) => {

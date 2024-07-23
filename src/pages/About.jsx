@@ -1,6 +1,6 @@
 import React from "react";
 // import  from "./useCursor";
-import Circle from "./Circle";
+import Circle from "./../components/Circle.jsx";
 const About = () => {
   return (
     <>

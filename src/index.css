@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +15,7 @@ body,
 html {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  background: black;
 }
 
 body::-webkit-scrollbar,
@@ -35,16 +37,17 @@ html::-webkit-scrollbar {
 
 .underline-animation {
   position: relative;
+  transition: 0.3 ease;
   display: inline-block;
 }
 
 .underline-animation::after {
   content: "";
   position: absolute;
-  bottom: -2px; /* Adjust as needed */
+  bottom: -2px;
   left: 0;
   width: 0;
-  height: 2px; /* Adjust as needed */
+  height: 2px;
   background-color: white;
   transition: width 0.3s ease;
 }
@@ -52,34 +55,32 @@ html::-webkit-scrollbar {
 .underline-animation:hover::after {
   width: 100%;
 }
-/* Example custom CSS */
+
 .text-stroke {
-  /* Create a text stroke with a width of 1px and color white */
   -webkit-text-stroke: 2px #eee;
-  text-stroke: 1px white; /* For non-WebKit browsers */
+  text-stroke: 1px white;
 }
 .text {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  animation: rotateT 10s linear infinite;
-  text-transform: uppercase;
-  border-radius: 50%;
+  animation: rotateT 12s linear infinite;
 }
 
 @keyframes rotateT {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
+  from {
     transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
 .text span {
   position: absolute;
+  display: flex;
   color: white;
-  font-size: 22px;
-  font-family: "Oswald";
-  transform-origin: 0 125px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.blob {
+  animation: rotateT 10s linear infinite;
 }

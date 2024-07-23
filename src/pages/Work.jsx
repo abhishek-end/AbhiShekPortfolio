@@ -1,5 +1,5 @@
 import React from "react";
-import Circle from "./Circle";
+import Circle from "./../components/Circle";
 const Work = () => {
   return (
     <>

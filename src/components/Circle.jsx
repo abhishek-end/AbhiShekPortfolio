@@ -1,5 +1,5 @@
 import React from "react";
-import { useCursor } from "./useCursor";
+import { useCursor } from "./../hooks/useCursor.jsx";
 
 const Circle = () => {
   const { position, isTouchingLink } = useCursor();

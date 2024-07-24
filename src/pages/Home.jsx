@@ -4,6 +4,7 @@ import ScrollMore from "../components/ScrollMore";
 import Name from "../components/Name";
 import "./../index.css";
 import Intro from "../components/Intro";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <ScrollMore />
       </section>
       <Intro />
+      <Skills />
     </div>
   );
 };

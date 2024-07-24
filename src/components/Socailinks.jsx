@@ -15,21 +15,18 @@ const Socailinks = () => {
 
   return (
     <div className='w-1/2 h-[56%] flex flex-col items-center  '>
-      <div className='flex flex-col items-start  gap-2  mt-20 '>
-        <h4 className='text-white text-6xl uppercase font-bold mb-4'>
+      <div className='flex flex-col items-start  gap-2  mt-24 '>
+        <h4 className='text-white text-7xl uppercase font-bold mb-10'>
           Social Media
         </h4>
         <a
           href='https://www.instagram.com/ab4i_.shek/'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center text-white text-3xl space-x-3'
+          className='flex items-center text-white text-2xl space-x-3'
         >
           <span {...eventHandlers}>Instagram</span>
-          <FontAwesomeIcon
-            icon={faArrowTrendUp}
-            className='text-white text-2xl '
-          />
+          <FontAwesomeIcon icon={faArrowTrendUp} />
         </a>
         <a
           href='https://www.linkedin.com/in/abhishek49534'
@@ -38,10 +35,7 @@ const Socailinks = () => {
           className='flex items-center text-white text-2xl space-x-3'
         >
           <span {...eventHandlers}>LinkedIn</span>
-          <FontAwesomeIcon
-            icon={faArrowTrendUp}
-            className='text-white text-2xl '
-          />
+          <FontAwesomeIcon icon={faArrowTrendUp} />
         </a>
         <a
           href='https://github.com/yourprofile'
@@ -62,10 +56,7 @@ const Socailinks = () => {
           className='flex items-center text-white text-2xl space-x-3'
         >
           <span {...eventHandlers}>Twitter</span>
-          <FontAwesomeIcon
-            icon={faArrowTrendUp}
-            className='text-white text-2xl '
-          />
+          <FontAwesomeIcon icon={faArrowTrendUp} />
         </a>
       </div>
     </div>

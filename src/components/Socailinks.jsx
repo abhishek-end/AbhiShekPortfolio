@@ -14,10 +14,10 @@ const Socailinks = () => {
   };
 
   return (
-    <div className='w-1/2 h-[56%] flex flex-col items-center  '>
-      <div className='flex flex-col items-start  gap-2  mt-24 '>
-        <h4 className='text-white text-7xl uppercase font-bold mb-10'>
-          Social Media
+    <div className='w-1/2 h-[55%] flex flex-col items-center border-l-[1px] '>
+      <div className='flex flex-col items-start  gap-4  mt-8 '>
+        <h4 className='text-white text-8xl uppercase font-bold mb-10 '>
+          Social <br /> Media
         </h4>
         <a
           href='https://www.instagram.com/ab4i_.shek/'
@@ -38,7 +38,7 @@ const Socailinks = () => {
           <FontAwesomeIcon icon={faArrowTrendUp} />
         </a>
         <a
-          href='https://github.com/yourprofile'
+          href='https://github.com/abhishek-end'
           target='_blank'
           rel='noopener noreferrer'
           className='flex items-center text-white text-2xl space-x-3'
@@ -50,7 +50,7 @@ const Socailinks = () => {
           />
         </a>
         <a
-          href='https://github.com/yourprofile'
+          href='https://x.com/'
           target='_blank'
           rel='noopener noreferrer'
           className='flex items-center text-white text-2xl space-x-3'

@@ -84,3 +84,8 @@ html::-webkit-scrollbar {
 .blob {
   animation: rotateT 10s linear infinite;
 }
+
+.i {
+  font-size: 20rem;
+  background-color: red;
+}

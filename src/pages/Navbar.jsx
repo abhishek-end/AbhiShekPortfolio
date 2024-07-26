@@ -16,11 +16,10 @@ const Navbar = () => {
   const commonProps = {
     onMouseEnter: handleTouch,
     onMouseLeave: removeTouch,
-    className: "underline-animation h4",
+    className: "underline-animation",
   };
   const navbar = useRef(null);
   const textRefs = useRef([]);
-  const borderRef = useRef();
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline();
@@ -56,9 +55,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav ref={navbar} className=' py-10 w-full fixed top-0 left-0 z-50  '>
-      <div className='container m-auto `flex justify-between items-center border-b-2 '>
-        <div className='space-x-12 text-white uppercase font-gugi mb-9 sm:text-lg md:text-xl lg:text-2xl'>
+    <nav ref={navbar} className='py-10 w-full fixed top-0 left-0 z-50 '>
+      <div className='container m-auto  flex justify-between items-start border-b-[1px] '>
+        <div className='space-x-12 text-white uppercase font-gugi mb-9 sm:text-lg md:text-xl lg:text-2xl '>
           <Link
             to={"/"}
             {...commonProps}
@@ -80,6 +79,13 @@ const Navbar = () => {
           >
             About
           </Link>
+        </div>
+        <div
+          className='text-2xl font-mono text-transparent text-stroke underline-animation '
+          onMouseOver={handleTouch}
+          onMouseLeave={removeTouch}
+        >
+          /2002/05/08
         </div>
       </div>
     </nav>

@@ -52,7 +52,7 @@ const Name = () => {
   return (
     <div>
       <div className='flex justify-center items-center w-full h-screen '>
-        <div className='z-50 flex flex-col items-center justify-center'>
+        <div className='z-50 flex flex-col items-center  justify-center'>
           <h1 className='font-eleventwenty font-bold text-5xl sm:text-6xl md:text-7xl lg:text-9xl text-white capitalize tracking-[1px] sm:tracking-[2px]'>
             abhisheK-Yadav
           </h1>

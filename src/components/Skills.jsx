@@ -53,17 +53,10 @@ const Skills = () => {
       el.addEventListener("mouseover", handleMouseIn);
       el.addEventListener("mouseout", handleMouseOut);
     });
-
-    return () => {
-      h4Elems.forEach((el) => {
-        el.removeEventListener("mouseover", handleMouseIn);
-        el.removeEventListener("mouseout", handleMouseOut);
-      });
-    };
   }, []);
 
   return (
-    <div className='h-screen w-full flex items-start  bottom-40  px-48 relative '>
+    <div className='h-screen w-full flex items-center  bottom-80   px-48 relative '>
       <div className='h-1/2 w-1/2'>
         <div className='skill'>
           <h1 className='text-white text-9xl font-extrabold uppercase'>

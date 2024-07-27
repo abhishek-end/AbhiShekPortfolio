@@ -5,6 +5,7 @@ import Name from "../components/Name";
 import "./../index.css";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
+import MyWork from "../components/MyWork";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       </section>
       <Intro />
       <Skills />
+      <MyWork />
     </div>
   );
 };

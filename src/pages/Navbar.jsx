@@ -70,14 +70,14 @@ const Navbar = () => {
             {...commonProps}
             ref={(el) => (textRefs.current[1] = el)}
           >
-            Work
+            About
           </Link>
           <Link
             to={"/about"}
             {...commonProps}
             ref={(el) => (textRefs.current[2] = el)}
           >
-            About
+            Work
           </Link>
         </div>
         <div

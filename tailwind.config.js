@@ -15,6 +15,10 @@ export default {
         aquamarine: "#7FFFD4",
         mediumpurple: "#9370DB",
       },
+      height: {
+        "h-50": "50vh",
+        "h-20": "20vh",
+      },
     },
   },
   plugins: [],

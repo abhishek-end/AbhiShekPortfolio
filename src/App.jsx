@@ -13,8 +13,8 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/work' element={<Work />} />
           <Route path='/about' element={<About />} />
+          <Route path='/work' element={<Work />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </Router>
@@ -23,4 +23,3 @@ const App = () => {
 };
 
 export default App;
-  

@@ -6,6 +6,8 @@ import "./../index.css";
 import Intro from "../components/Intro";
 import Skills from "../components/Skills";
 import MyWork from "../components/MyWork";
+import GetInTouch from "../components/GetInTouch";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
       <Intro />
       <Skills />
       <MyWork />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };

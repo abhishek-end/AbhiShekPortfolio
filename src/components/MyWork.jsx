@@ -58,7 +58,7 @@ const MyWork = () => {
       text: "Project4",
       imgSrc: "https://cdn.esawebb.org/archives/images/screen/weic2216b.jpg",
       info: "",
-      tech: "",
+      tech: "HTML CSS JS",
     },
   ];
 
@@ -95,7 +95,7 @@ const MyWork = () => {
             <div className='text-white font-medium text-xl overflow-hidden flex items-center  w-2/3'>
               {item.info}
             </div>
-            <div className='tech-used text-sm text-white uppercase'>
+            <div className='tech-used text-sm  text-white uppercase opacity-50'>
               {item.tech}
             </div>
           </div>

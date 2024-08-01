@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className='container m-auto'>
+    <div className='container m-auto select-none'>
       <Name />
       <Circle />
       <section className='bg-black w-full  flex items-start justify-center'>

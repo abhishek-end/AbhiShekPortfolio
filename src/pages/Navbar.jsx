@@ -16,7 +16,7 @@ const Navbar = () => {
   const commonProps = {
     onMouseEnter: handleTouch,
     onMouseLeave: removeTouch,
-    className: "underline-animation",
+    className: "underline-animation text-white",
   };
   const navbar = useRef(null);
   const textRefs = useRef([]);
@@ -55,9 +55,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav ref={navbar} className='py-10 w-full fixed top-0 left-0 z-50 '>
-      <div className='container m-auto  flex justify-between items-start border-b-[1px] '>
-        <div className='space-x-12 text-white uppercase font-gugi mb-9 sm:text-lg md:text-xl lg:text-2xl '>
+    <nav ref={navbar} className='py-10 w-full fixed top-0 left-0 z-50  '>
+      <div className='container m-auto  flex justify-between items-start sm:border-b '>
+        <div className='space-x-12 text-white uppercase font-gugi lg:mb-9  sm:text-lg md:text-xl lg:text-2xl   '>
           <Link
             to={"/"}
             {...commonProps}
@@ -66,14 +66,14 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to={"/work"}
+            to={"/about"}
             {...commonProps}
             ref={(el) => (textRefs.current[1] = el)}
           >
             About
           </Link>
           <Link
-            to={"/about"}
+            to={"/work"}
             {...commonProps}
             ref={(el) => (textRefs.current[2] = el)}
           >
@@ -81,7 +81,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div
-          className='text-2xl font-mono text-transparent text-stroke underline-animation '
+          className='md:text-xl lg:text-2xl sm:text-sm text-xl text-stroke text-transparent font-bold underline-animation '
           onMouseOver={handleTouch}
           onMouseLeave={removeTouch}
         >

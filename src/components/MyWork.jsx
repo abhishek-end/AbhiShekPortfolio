@@ -35,24 +35,24 @@ const MyWork = () => {
 
   const data = [
     {
-      text: "Project1",
+      text: "Lazarev Website Agencey ",
       imgSrc:
         "https://images.pexels.com/photos/18383020/pexels-photo-18383020/free-photo-of-portrait-of-woman-with-peacock-feather.jpeg",
       info: "",
-      tech: "",
+      tech: "HTML ⚆ CSS ⚆ JAVASCRIPT ⚆ GSAP ",
     },
     {
-      text: "Project2",
+      text: "ROLEX WATCH Recreated",
       imgSrc:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9ritPwYXdG3QsWdtMDs3ujOR4Kwh9hLrT3aJY862AWvlenYVrIARIpoyPC_IZYZXGu8&usqp=CAU",
       info: "",
-      tech: "",
+      tech: "HTML ⚆ CSS ⚆ JAVASCRIPT ⚆ GSAP",
     },
     {
-      text: "Project3",
+      text: "Personal Portfolio",
       imgSrc: "https://cdn.esawebb.org/archives/images/screen/weic2216b.jpg",
       info: "",
-      tech: "",
+      tech: "React ⚆ TailwindCSS ⚆ GSAP ",
     },
     {
       text: "Project4",
@@ -63,8 +63,8 @@ const MyWork = () => {
   ];
 
   return (
-    <div className=' w-full  min-h-screen -mt-80 px-48  '>
-      <div className='text-white text-7xl uppercase font-extrabold whitespace-wrap w-full  '>
+    <div className=' w-full  min-h-screen  mt-32 lg:mt-64 px-2 lg:px-48  '>
+      <div className='text-white text-xl uppercase lg:text-7xl py-4 text-center lg:text-left font-extrabold whitespace-wrap w-full  '>
         <h4>
           It might be simple but <br /> I put my heart into it
         </h4>
@@ -73,29 +73,29 @@ const MyWork = () => {
         {data.map((item, index) => (
           <div
             key={index}
-            className='w-full h-[10rem] border-b  mt-2 flex flex-col justify-between  '
+            className='w-full h-[10rem] border-b  mt-2 flex flex-col justify-between '
             onMouseEnter={() => mouseEnter(index)}
             onMouseLeave={onMouseLeave}
           >
             <div className='relative r-image patanhi'>
-              <h4 className='text-white text-2xl capitalize font-gugi font-semibold mt-2'>
+              <h4 className='text-white text-sm md:text-xl lg:text-2xl capitalize font-gugi font-semibold mt-2'>
                 {item.text}
               </h4>
               <img
                 src={item.imgSrc}
                 alt='item.index'
-                className={`w-56 h-64 rounded-lg top-0 left-40 absolute object-cover transition-opacity duration-300   ${
-                  isHover === index ? "" : "opacity-0"
+                className={` w-38 h-44 lg:w-56 lg:h-64 rounded-lg top-0 left-40 absolute object-cover transition-opacity duration-300   ${
+                  isHover === index ? "opacity-100" : "opacity-0"
                 }`}
                 ref={(el) => {
                   imgRef.current[index] = el;
                 }}
               />
             </div>
-            <div className='text-white font-medium text-xl overflow-hidden flex items-center  w-2/3'>
+            <div className='text-white  md:text-sm lg:text-lg text-xs whitespace-normal break-words  flex items-center h-1/2 w-11/12'>
               {item.info}
             </div>
-            <div className='tech-used text-sm  text-white uppercase opacity-50'>
+            <div className='tech-used text-xs lg:text-sm   text-white uppercase opacity-50'>
               {item.tech}
             </div>
           </div>

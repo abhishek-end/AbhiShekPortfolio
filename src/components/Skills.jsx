@@ -30,7 +30,7 @@ const Skills = () => {
           h4.style.transition = "0.2s ease";
           h4.style.zIndex = "99";
         }
-        e.target.style.transform = "scale(1.4)";
+        e.target.style.transform = "scale(1.2)";
         e.target.style.transition = ".2s ease";
       });
     };
@@ -56,15 +56,16 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='h-screen w-full flex items-center  bottom-80   px-48 relative '>
-      <div className='h-1/2 w-1/2'>
+    <div className='h-screen w-full flex flex-col  lg:items-center  md:flex-row lg:flex-row  mt-40 relative  lg:px-48 px-2 '>
+      <div className=' lg:h-1/2 lg:w-1/2'>
         <div className='skill'>
-          <h1 className='text-white text-9xl font-extrabold uppercase'>
-            Skills <sub className='text-sm -mx-7'>{"{hover me}"}</sub>
+          <h1 className='text-white text-5xl lg:text-9xl  font-extrabold uppercase '>
+            Skills{" "}
+            <sub className='text-sm  whitespace-nowrap'>{"{hover me}"}</sub>
           </h1>
         </div>
-        <div className='flex gap-2 text-white text-4xl font-sans flex-col font-bold '>
-          <div className='flex items-center justify-start mt-10 font-sans text-stroke  gap-2 text-transparent '>
+        <div className='flex gap-2 text-white text-3xl lg:text-4xl md:text-5xl font-sans flex-col font-bold '>
+          <div className='flex  w-full h-full  mt-10 font-sans text-stroke  gap-1 text-transparent '>
             {["HTML", "CSS", "Javascript"].map((skill, index) => (
               <React.Fragment key={index}>
                 <h4
@@ -110,12 +111,12 @@ const Skills = () => {
               TailwindCSS
             </h4>
           </div>
-          <div className='flex items-center justify-start mt-6'>
+          <div className='flex items-center justify-start mt-6 text-2xl'>
             <h1>& many skill Loading...</h1>
           </div>
         </div>
       </div>
-      <div className='right-side-div w-1/2 h-1/2 relative flex justify-center items-center'>
+      <div className='right-side-div h-full relative flex justify-center items-center mt-20 lg:mt-0 w-full lg:w-1/2 lg:h-1/2  '>
         {[
           html,
           "https://blogs.purecode.ai/blogs/wp-content/uploads/2024/01/untitled7-1.gif",

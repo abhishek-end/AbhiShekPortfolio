@@ -50,38 +50,39 @@ const Name = () => {
     };
   }, []);
   return (
-    <div>
-      <div className='flex justify-center items-center w-full h-screen '>
-        <div className='z-50 flex flex-col items-center  justify-center'>
-          <h1 className='font-eleventwenty font-bold text-5xl sm:text-6xl md:text-7xl lg:text-9xl text-white capitalize tracking-[1px] sm:tracking-[2px]'>
+    <>
+      <div className='flex justify-center items-center w-full h-screen p-4'>
+        <div className='z-50 flex flex-col items-center justify-center '>
+          <h1 className='font-eleventwenty  font-bold text-4xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-9xl text-white capitalize tracking-[1px] sm:tracking-[2px]'>
             abhisheK-Yadav
           </h1>
-          <div className='flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-oswald font-semibold'>
+          <div className='text-white flex text-xl sm:text-2xl lg:text-4xl xl:text-5xl gap-2 font-bold w-full  items-center justify-center '>
             <h4
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               onClick={handleClick}
-              className='transition-all'
+              className='transition-all sm:mb-0'
             >
               {randomText}
             </h4>
-            <span className='mx-4 text-transparent text-stroke'>
+            <span className='mx-0 sm:mx-2 text-transparent text-stroke text-xl sm:text-2xl lg:text-4xl xl:text-5xl '>
               Creative Developer
             </span>
           </div>
         </div>
       </div>
+
       {visible && (
         <div
-          className='blob h-[250px] aspect-square rounded-full bg-white fixed blur-[150px] bg-gradient-to-r from-aquamarine to-mediumpurple'
+          className='blob h-[150px] sm:h-[200px] md:h-[250px] aspect-square rounded-full bg-white fixed blur-[100px] sm:blur-[120px] md:blur-[150px] bg-gradient-to-r from-aquamarine to-mediumpurple'
           style={{
-            left: `${position.x - 125}px`,
-            top: `${position.y - 125}px`,
+            left: `${position.x - 75}px`,
+            top: `${position.y - 75}px`,
             pointerEvents: "none",
           }}
         ></div>
       )}
-    </div>
+    </>
   );
 };
 

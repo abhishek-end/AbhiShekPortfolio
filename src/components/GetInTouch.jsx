@@ -11,6 +11,7 @@ const GetInTouch = () => {
         start: "50% 50%",
         end: "100% 50%",
         pin: true,
+        markers: true,
       },
     });
     tl.to("#top", { top: "-50%", opacity: 0, zIndex: -1 }, "a")
@@ -21,26 +22,27 @@ const GetInTouch = () => {
   }, []);
 
   return (
-    <div className='main h-screen w-full relative overflow-hidden'>
+    <div className='main h-screen w-full relative overflow-hidden '>
       <div
         id='top'
         className='w-full h-[50vh]  absolute top-0 overflow-hidden '
       >
         <h1
           id='t-h1'
-          className='uppercase text-[10rem] font-extrabold text-stroke text-transparent whitespace-nowrap'
+          className='uppercase text-4xl md:text-6xl lg:text-[11rem] font-extrabold text-stroke text-transparent whitespace-nowrap'
         >
           get—in—touch
         </h1>
       </div>
       <div
         id='center'
-        className='w-full h-screen  absolute flex items-center justify-center -z-30 '
+        className='w-full h-screen  absolute flex items-center justify-center -z-30  border-t '
       >
-        <div className='content bg-transparent  '>
-          <h4 className='text-6xl text-white whitespace-nowrap '>HIRE ME!</h4>
+        <div className='content bg-transparent'>
+          <h4 className='text-4xl md:text-6xl lg:text-8xl text-white whitespace-nowrap '>
+            HIRE ME!
+          </h4>
           <h5>or just say hi</h5>
-          
         </div>
       </div>
       <div
@@ -49,7 +51,7 @@ const GetInTouch = () => {
       >
         <h1
           id='b-h1'
-          className='uppercase text-[10rem] font-extrabold text-stroke text-transparent whitespace-nowrap'
+          className='uppercase text-4xl md:text-6xl lg:text-[11rem] font-extrabold text-stroke text-transparent whitespace-nowrap'
         >
           get—in—touch
         </h1>

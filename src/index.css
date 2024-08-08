@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&display=swap");
 @font-face {
   font-family: "Eleven Twenty";
-  src: url("src/assets/11.20___.TTF") format("truetype");
+  src: url(src/assets/11.20___.TTF);
   font-weight: normal;
   font-style: normal;
 }

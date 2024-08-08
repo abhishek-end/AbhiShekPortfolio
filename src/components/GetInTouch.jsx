@@ -11,7 +11,6 @@ const GetInTouch = () => {
         start: "50% 50%",
         end: "100% 50%",
         pin: true,
-        markers: true,
       },
     });
     tl.to("#top", { top: "-50%", opacity: 0, zIndex: -1 }, "a")

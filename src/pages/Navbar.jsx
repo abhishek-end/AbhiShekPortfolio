@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <nav ref={navbar} className='py-10 w-full fixed top-0 left-0 z-50  '>
-      <div className='container m-auto  flex justify-between items-start sm:border-b '>
+      <div className='container m-auto  flex justify-center items-start sm:border-b '>
         <div className='space-x-12 text-white uppercase font-gugi lg:mb-9  sm:text-lg md:text-xl lg:text-2xl   '>
           <Link
             to={"/"}
@@ -80,13 +80,13 @@ const Navbar = () => {
             Work
           </Link>
         </div>
-        <div
+        {/* <div
           className='md:text-xl lg:text-2xl sm:text-sm text-xl text-stroke text-transparent font-bold underline-animation '
           onMouseOver={handleTouch}
           onMouseLeave={removeTouch}
         >
           /2002/05/08
-        </div>
+        </div> */}
       </div>
     </nav>
   );

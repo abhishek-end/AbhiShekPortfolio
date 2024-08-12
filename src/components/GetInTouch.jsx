@@ -9,11 +9,22 @@ const GetInTouch = () => {
 
   const handleMouseEnter = () => setIsTouchingLink(true);
   const handleMouseLeave = () => setIsTouchingLink(false);
+  const handleEmail = () => {
+    const main = "abhishekyadav49534";
+    const last = ".gmail.com";
+    window.location.href = `mailto:${main}+${last}`;
+  };
+  const handlePhone = () => {
+    const countryCode = "+91";
+    const number = "9138601445";
+    window.location.href = `tel:${countryCode}+${number}`;
+  };
   const eventHandlers = {
-    onMouseMove: handleMouseEnter,
+    onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave,
     className: "underline-animation scaleX",
   };
+
   useEffect(() => {
     var tl = gsap.timeline({
       scrollTrigger: {
@@ -28,8 +39,8 @@ const GetInTouch = () => {
       .to("#bottom", { bottom: "-50%" }, "a")
       .to("#t-h1", { bottom: "50%" }, "a")
       .to("#b-h1", { bottom: "-50%" }, "a")
-      .to("#center", { top: "-50%" }, "a");
-    // .fromTo("#center", { opacity: 0 }, { opacity: 1 }, "<");
+      .to("#center", { top: "-50%" }, "a")
+      .fromTo("#center", { opacity: 0 }, { opacity: 1 }, "<");
   }, []);
 
   return (
@@ -37,11 +48,11 @@ const GetInTouch = () => {
       {/* top-div */}
       <div
         id='top'
-        className='w-full h-[50vh] absolute top-0 overflow-hidden lg:bg-[#D3D5D4] p-2'
+        className='w-full h-[50vh] absolute top-0 overflow-hidden bg-[#D3D5D4] p-2'
       >
         <h1
           id='t-h1'
-          className='uppercase text-4xl md:text-6xl lg:text-[12rem] font-extrabold  lg:text-black font-oswald text-st whitespace-nowrap'
+          className='uppercase text-5xl md:text-6xl lg:text-[12rem] font-extrabold text-black lg:font-oswald whitespace-nowrap'
         >
           get-in-touch
         </h1>
@@ -51,39 +62,36 @@ const GetInTouch = () => {
 
       <div
         id='center'
-        className='w-full h-screen bg-black absolute flex justify-center items-end  -z-10 mt-[31rem]'
+        className='w-full h-screen bg-black absolute flex justify-center items-end -z-10 lg:mt-[31rem] mt-[27rem]'
       >
         <div className='content flex flex-col w-full '>
           <h4 className='text-4xl md:text-6xl lg:text-9xl font-extrabold text-white whitespace-nowrap font-oswald text-center'>
-            HIRE ME!
+            HIRE ME
           </h4>
 
-          <div className='image flex justify-center  '>
+          <div className='image flex justify-center mt-10 '>
             <img
               src='https://i.gifer.com/origin/e0/e08f73642d422d94483c0ca96f737ac2_w200.gif'
               alt=''
               className=''
             />
           </div>
-          <h5 className='text-white text-center mb-10 text-xl uppercase font-oswald'>
+          <h5 className='text-white text-center mb-10 mt-10 text-xl uppercase font-oswald'>
             or Just say hi
           </h5>
           <div className='font-extrabold   text-white text-center flex flex-col justify-center '>
-            <div className='w-full h-full border-t py-4 flex justify-center items-center text-5xl gap-4'>
+            <div className='w-full h-full border-t py-4 flex justify-center items-center lg:text-5xl gap-4'>
               <div {...eventHandlers}>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <a href='mailto:abhishekyadav49534@gmail.com'>
+                <FontAwesomeIcon icon={faEnvelope} className='mx-4' />
+                <button onClick={handleEmail}>
                   abhishekyadav49534@gmail.com
-                </a>
+                </button>
               </div>
             </div>
-            <div className='w-full h-full border-t py-4 flex justify-center items-center text-5xl gap-5 '>
+            <div className='w-full h-full border-t py-4 flex justify-center items-center lg:text-5xl '>
               <div {...eventHandlers}>
-                <FontAwesomeIcon
-                  icon={faMobileButton}
-                  className='border-none mb-1'
-                />
-                <a href='tel:+919138601445'>+91 91386-01445</a>
+                <FontAwesomeIcon icon={faMobileButton} className=' mb-1 mx-4' />
+                <button onClick={handlePhone}>+91 91386-01445</button>
               </div>
             </div>
           </div>
@@ -92,11 +100,11 @@ const GetInTouch = () => {
       {/* bottom div */}
       <div
         id='bottom'
-        className='w-full h-[50vh] absolute bottom-0 overflow-hidden lg:bg-[#D3D5D4]'
+        className='w-full h-[50vh] absolute bottom-0 overflow-hidden bg-[#D3D5D4]'
       >
         <h1
           id='b-h1'
-          className='uppercase text-4xl md:text-6xl lg:text-[12rem] font-extrabold text-stroke lg:text-black whitespace-nowrap font-oswald'
+          className='uppercase text-5xl md:text-6xl lg:text-[12rem] font-extrabold  text-black whitespace-nowrap lg:font-oswald'
         >
           get-in-touch
         </h1>

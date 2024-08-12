@@ -69,10 +69,10 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='h-screen w-full flex flex-col lg:items-center  md:flex-row lg:flex-row  mt-60 lg:mt-10 relative lg:px-48  lg:p-6 '>
-      <div className=' lg:h-1/2 lg:w-1/2 lg:bg-[#D3D5D4] lg:rounded-l-lg lg:px-3 '>
-        <div className=' mb-6'>
-          <h1 className='text-white lg:text-black text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase '>
+    <div className='h-screen w-full flex flex-col lg:items-center  md:flex-row lg:flex-row  mt-32 lg:mt-0 relative lg:px-48 lg:p-4 px-0.5 m-2'>
+      <div className=' lg:h-1/2 lg:w-1/2 bg-[#D3D5D4] lg:rounded-l-lg lg:px-3  w-full h-full'>
+        <div className='lg:mb-6 mb-3'>
+          <h1 className='text-black text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase py-4 lg:py-0 mt-2.5 m-2'>
             Skills
             <sub
               className='text-sm lg:text-2xl whitespace-nowrap capitalize'
@@ -82,8 +82,8 @@ const Skills = () => {
             </sub>
           </h1>
         </div>
-        <div className='flex gap-2 text-white lg:w-10/12  text-3xl lg:text-4xl md:text-5xl font-mono flex-col font-bold bg-black rounded-lg lg:px-2'>
-          <div className='flex  w-full h-full  mt-4 font-sans text-st gap-1 text-transparent lg:text-transparent]'>
+        <div className='flex gap-2 text-white lg:w-10/12 w-11/12 p-1 text-3xl lg:text-4xl md:text-5xl mx-2 font-mono flex-col font-bold bg-black lg:rounded-lg rounded-md lg:px-2'>
+          <div className='flex  w-full h-full  lg:mt-5 mt-3 font-sans text-st gap-1 text-transparent lg:text-transparent]'>
             {["HTML", "CSS", "Javascript"].map((skill, index) => (
               <React.Fragment key={index}>
                 <h4
@@ -100,7 +100,7 @@ const Skills = () => {
             ))}
           </div>
 
-          <div className='flex items-center justify-start mt-10 font-sans text-st  gap-1 text-transparent lg:text-black'>
+          <div className='flex items-center justify-start lg:mt-7 mt-4 font-sans text-st  gap-1 text-transparent lg:text-black'>
             {["SASS", "React JS", "GSAP"].map((skill, index) => (
               <React.Fragment key={index + 3}>
                 <h4
@@ -119,7 +119,7 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className='flex items-center justify-start mt-6 font-sans text-stroke uppercase gap-1 text-transparent lg:text-black '>
+          <div className='flex items-center justify-start mt-5 lg:mt-6 font-sans text-stroke uppercase  text-transparent lg:text-black '>
             <h4
               ref={(el) => (h4Refs.current[6] = el)}
               onMouseEnter={() => handleMouseEnter(6)}
@@ -129,7 +129,7 @@ const Skills = () => {
               TailwindCSS
             </h4>
           </div>
-          <div className='flex items-center justify-start mt-6 text-2xl lg:mb-4'>
+          <div className='flex items-center justify-start mt-4 text-2xl lg:mb-3 lg:mt-6'>
             <h1>& Loading...</h1>
           </div>
         </div>

@@ -123,13 +123,13 @@ html::-webkit-scrollbar {
 }
 #t-h1 {
   position: absolute;
-  top: 98.9%;
+  top: 100%;
   /* bottom: 50%; */
 }
 
 #b-h1 {
   position: absolute;
-  top: -01%;
+  top: 0%;
 }
 /* text-stroke */
 .text-st {

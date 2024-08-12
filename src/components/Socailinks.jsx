@@ -19,13 +19,13 @@ const Socailinks = () => {
   };
 
   return (
-    <div className='lg:w-8/12 lg:h-1/2 flex flex-col w-full h-full mt-56 justify-cente lg:mt-0  lg:bg-[#D3D5D4] rounded-lg lg:p-4 px-4'>
-      <div className='flex flex-col lg:mt-0 lg:w-full lg:justify-center  h-1/2'>
-        <h4 className='text-white lg:text-black text-7xl lg:text-9xl md:text-8xl uppercase font-extrabold font-oswald '>
+    <div className='lg:w-8/12 lg:h-1/2 flex flex-col w-full h-full mt-32 justify-cente lg:mt-0 bg-[#D3D5D4] rounded-lg lg:p-4 p-2 '>
+      <div className='flex flex-col lg:mt-0 lg:w-full lg:justify-center h-1/2'>
+        <h4 className='text-black text-7xl lg:text-9xl md:text-8xl uppercase font-extrabold font-oswald '>
           Social <br /> Media
         </h4>
       </div>
-      <div className='lg:p-4 lg:flex lg:flex-col w-1/2 lg:rounded-lg  mt-10 lg:mt-8 gap-3 lg:gap-4 flex flex-col lg:bg-black'>
+      <div className='lg:p-4 lg:flex lg:flex-col lg:w-1/2 rounded-lg bg-black w-2/3 mt-10 lg:mt-8 gap-3 lg:gap-4 flex flex-col bg- p-2'>
         <a
           href='https://www.instagram.com/ab4i_.shek/'
           target='_blank'

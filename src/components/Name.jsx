@@ -73,14 +73,14 @@ const Name = () => {
       </div>
 
       {visible && (
-        <div
-          className='blob h-[150px] sm:h-[200px] md:h-[250px] aspect-square rounded-full bg-white fixed blur-[100px] sm:blur-[120px] md:blur-[150px] bg-gradient-to-r from-aquamarine to-mediumpurple'
-          style={{
-            left: `${position.x - 75}px`,
-            top: `${position.y - 75}px`,
-            pointerEvents: "none",
-          }}
-        ></div>
+          <div
+            className='blob  w-60 aspect-square rounded-full  fixed bg-white blur-[180px] z-10'
+            style={{
+              left: `${position.x - 240 / 2}px`,
+              top: `${position.y - 240 / 2}px`,
+              pointerEvents: "none",
+            }}
+          ></div>
       )}
     </>
   );

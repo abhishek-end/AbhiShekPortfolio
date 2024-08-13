@@ -37,9 +37,8 @@ const Navbar = () => {
     });
 
     tl.to(textRefs.current, {
-      opacity: 0,
+      opacity: 0, 
       yPercent: -100,
-      // duration: 1,
       scrollTrigger: {
         trigger: navbar.current,
         start: "top top",
@@ -57,7 +56,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbar}
-      className='p-10 h-full w-full fixed top-0 justify-center  '
+      className='py-4 h-full w-full fixed top-0 justify-center  '
     >
       <div className='container m-auto  flex lg:justify-between  items-center border-b py-4 gap-2'>
         <div className='space-x-12 text-white uppercase font-gugi sm:text-lg md:text-xl lg:text-2xl   '>

@@ -69,7 +69,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='h-screen w-full flex flex-col lg:items-center  md:flex-row lg:flex-row  mt-32 lg:mt-0 relative lg:px-48 lg:p-4 mb-20 lg:mb-0'>
+    <div className='h-screen w-full flex flex-col lg:items-center  md:flex-row lg:flex-row  mt-32 lg:mt-0 relative lg:px-48 lg:p-4 mb-20 lg:mb-0  '>
       <div className=' lg:h-1/2 lg:w-1/2 bg-[#D3D5D4] lg:rounded-l-lg lg:px-3  w-full h-full'>
         <div className='lg:mb-6 mb-3'>
           <h1 className='text-black text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase py-4 lg:py-0 mt-2.5 m-2'>
@@ -138,15 +138,16 @@ const Skills = () => {
         <img
           src='https://cdn.dribbble.com/users/966681/screenshots/2896143/working.gif'
           alt=''
-          className='p-2 w-full h-full'
+          className='p-2 w-full h-full object-cover'
         />
         {[
           html,
-          "https://blogs.purecode.ai/blogs/wp-content/uploads/2024/01/untitled7-1.gif",
-          "https://miro.medium.com/v2/resize:fit:3200/0*de0IdiUSoJTwgsys.gif",
+          "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9t5cstaou0yjbh1gffj.gif",
+          "https://media2.giphy.com/media/SvFocn0wNMx0iv2rYz/200w.gif?cid=6c09b952rw74ryzomkjlm8ph0v354blgc8ugtd87iemeddrk&ep=v1_gifs_search&rid=200w.gif&ct=g",
+          // "https://miro.medium.com/v2/resize:fit:3200/0*de0IdiUSoJTwgsys.gif",
           sass,
-          "https://user-images.githubusercontent.com/97989643/220242520-78dd8232-4416-461a-a8f1-6c0b3f5f357f.gif",
-          "https://cdn.mos.cms.futurecdn.net/252USFwhUaVeFm664hWzFA.jpg",
+          "https://miro.medium.com/v2/resize:fit:1400/1*a-HMmQFQNC76zCZBZfFgJg.gif",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo.gif",
           TailwindCSS,
         ].map((src, index) => (
           <img

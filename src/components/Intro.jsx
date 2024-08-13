@@ -46,7 +46,7 @@ const Intro = () => {
           className=' h-full w-full object-cover lg:rounded-lg'
         />
       </div>
-    </div>
+    </div>           
   );
 };
 

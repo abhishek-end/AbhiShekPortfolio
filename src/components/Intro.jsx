@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useCursor } from "./../hooks/useCursor";
-// import Image from "./Image";
-
+import Image from "./../img/1000192870.png";
 const Intro = () => {
   const { setIsTouchingLink } = useCursor();
   const handleTouch = () => setIsTouchingLink(true);
@@ -17,7 +16,7 @@ const Intro = () => {
   };
 
   return (
-    <div className='flex lg:justify-center lg:items-center flex-col h-screen w-full mt-80 lg:mt-72 lg:flex-row lg:px-48 p-2'>
+    <div className='flex lg:justify-center lg:items-center flex-col h-screen w-full mt-80 lg:mt-72 lg:flex-row lg:px-48'>
       <div className='flex  flex-col lg:w-full lg:h-1/2  items-start pl-2 bg-[#D3D5D4] lg:rounded-l-lg'>
         <div className='text-black text-7xl md:text-8xl lg:text-9xl font-bold font-oswald w-1/2 h-1/2'>
           {/* {hello world for bio} */}
@@ -40,9 +39,13 @@ const Intro = () => {
           />
         </div>
       </div>
-      {/* <Image />
-       */}
-      <div className="bg-[url('src/img/1000192870.png')] w-full h-full lg:w-1/2 lg:h-3/5 bg-no-repeat lg:rounded-lg bg-cover "></div>
+      <div className='lg:w-1/2 lg:h-3/5 overflow-hidden mt-1 lg:overflow-auto '>
+        <img
+          src={Image}
+          alt='Description of image'
+          className=' h-full w-full object-cover lg:rounded-lg'
+        />
+      </div>
     </div>
   );
 };

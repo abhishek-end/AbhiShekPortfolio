@@ -69,7 +69,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='h-screen w-full flex flex-col lg:items-center  md:flex-row lg:flex-row  mt-32 lg:mt-0 relative lg:px-48 lg:p-4 px-0.5 m-2'>
+    <div className='h-screen w-full flex flex-col lg:items-center  md:flex-row lg:flex-row  mt-32 lg:mt-0 relative lg:px-48 lg:p-4 mb-20 lg:mb-0'>
       <div className=' lg:h-1/2 lg:w-1/2 bg-[#D3D5D4] lg:rounded-l-lg lg:px-3  w-full h-full'>
         <div className='lg:mb-6 mb-3'>
           <h1 className='text-black text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase py-4 lg:py-0 mt-2.5 m-2'>

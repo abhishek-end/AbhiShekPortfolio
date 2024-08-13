@@ -39,8 +39,8 @@ const GetInTouch = () => {
       .to("#bottom", { bottom: "-50%" }, "a")
       .to("#t-h1", { bottom: "50%" }, "a")
       .to("#b-h1", { bottom: "-50%" }, "a")
-      .to("#center", { top: "-50%" }, "a")
-      .fromTo("#center", { opacity: 0 }, { opacity: 1 }, "<");
+      .to("#center", { top: "0%" }, "a");
+    // .fromTo("#center", { opacity: 0 }, { opacity: 1 }, "<");
   }, []);
 
   return (
@@ -62,7 +62,7 @@ const GetInTouch = () => {
 
       <div
         id='center'
-        className='w-full h-screen bg-black absolute flex justify-center items-end -z-10 lg:mt-[31rem] mt-[27rem]'
+        className='w-full h-screen bg-black absolute flex justify-center items-end  -z-10 '
       >
         <div className='content flex flex-col w-full '>
           <h4 className='text-4xl md:text-6xl lg:text-9xl font-extrabold text-white whitespace-nowrap font-oswald text-center'>

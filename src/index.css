@@ -113,7 +113,9 @@ html::-webkit-scrollbar {
   }
 }
 /* get in touch */
-
+#center {
+  top: 100%; /* Start offscreen */
+}
 .main h1 {
   position: absolute;
   top: 50%;

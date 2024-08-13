@@ -55,9 +55,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav ref={navbar} className='py-10 w-full fixed top-0 left-0 z-50  '>
-      <div className='container m-auto  flex justify-center items-start sm:border-b '>
-        <div className='space-x-12 text-white uppercase font-gugi lg:mb-9  sm:text-lg md:text-xl lg:text-2xl   '>
+    <nav
+      ref={navbar}
+      className='p-10 h-full w-full fixed top-0 justify-center  '
+    >
+      <div className='container m-auto  flex lg:justify-between  items-center border-b py-4 gap-2'>
+        <div className='space-x-12 text-white uppercase font-gugi sm:text-lg md:text-xl lg:text-2xl   '>
           <Link
             to={"/"}
             {...commonProps}
@@ -80,13 +83,13 @@ const Navbar = () => {
             Work
           </Link>
         </div>
-        {/* <div
-          className='md:text-xl lg:text-2xl sm:text-sm text-xl text-stroke text-transparent font-bold underline-animation '
+        <div
+          className='md:text-xl lg:text-2xl sm:text-sm text-xl text-white font-bold capitalize underline-animation opacity-0 lg:opacity-100 italic font-[cursive]'
           onMouseOver={handleTouch}
           onMouseLeave={removeTouch}
         >
-          /2002/05/08
-        </div> */}
+          /resume
+        </div>
       </div>
     </nav>
   );

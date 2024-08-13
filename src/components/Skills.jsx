@@ -143,8 +143,8 @@ const Skills = () => {
         {[
           html,
           "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9t5cstaou0yjbh1gffj.gif",
-          "https://media2.giphy.com/media/SvFocn0wNMx0iv2rYz/200w.gif?cid=6c09b952rw74ryzomkjlm8ph0v354blgc8ugtd87iemeddrk&ep=v1_gifs_search&rid=200w.gif&ct=g",
-          // "https://miro.medium.com/v2/resize:fit:3200/0*de0IdiUSoJTwgsys.gif",
+          // "https://media2.giphy.com/media/SvFocn0wNMx0iv2rYz/200w.gif?cid=6c09b952rw74ryzomkjlm8ph0v354blgc8ugtd87iemeddrk&ep=v1_gifs_search&rid=200w.gif&ct=g",
+          "https://miro.medium.com/v2/resize:fit:3200/0*de0IdiUSoJTwgsys.gif",
           sass,
           "https://miro.medium.com/v2/resize:fit:1400/1*a-HMmQFQNC76zCZBZfFgJg.gif",
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo.gif",

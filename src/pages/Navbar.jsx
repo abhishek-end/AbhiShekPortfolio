@@ -23,6 +23,7 @@ const Navbar = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline();
+    gsap.set(textRefs.current, { opacity: 1, yPercent: 0 });
     gsap.to(navbar.current, {
       yPercent: -100,
       scrollTrigger: {
@@ -37,14 +38,17 @@ const Navbar = () => {
     });
 
     tl.to(textRefs.current, {
-      opacity: 0, 
+      opacity: 0,
       yPercent: -100,
+      // duration: 1,
       scrollTrigger: {
         trigger: navbar.current,
-        start: "top top",
+        start: "top 10%",
+        scrub: 1,
         end: "bottom top",
-        scrub: true,
+        toggleActions: "play reverse play reverse",
       },
+      ease: "power3.inOut",
     });
 
     // Clean up

@@ -31,24 +31,10 @@ const Navbar = () => {
         start: "top top",
         end: "bottom top",
         scrub: 1,
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play ",
       },
       duration: 0.5,
       ease: "power1.inOut",
-    });
-
-    tl.to(textRefs.current, {
-      opacity: 0,
-      yPercent: -100,
-      // duration: 1,
-      scrollTrigger: {
-        trigger: navbar.current,
-        start: "top 10%",
-        scrub: 1,
-        end: "bottom top",
-        toggleActions: "play reverse play reverse",
-      },
-      ease: "power3.inOut",
     });
 
     // Clean up
@@ -95,7 +81,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
+  );  
 };
 
 export default Navbar;

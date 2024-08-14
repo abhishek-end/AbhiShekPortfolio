@@ -1,20 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { useCursor } from "./../hooks/useCursor";
+import React, { useEffect } from "react";
 import Image from "./../img/1000192870.png";
+import WorkButton from "./WorkButton";
 const Intro = () => {
-  const { setIsTouchingLink } = useCursor();
-  const handleTouch = () => setIsTouchingLink(true);
-  const removeTouch = () => setIsTouchingLink(false);
-
-  const eventHandlers = {
-    onMouseMove: handleTouch,
-    onMouseLeave: removeTouch,
-    className: "underline-animation",
-  };
-
   return (
     <div className='flex lg:justify-center lg:items-center flex-col h-screen w-full mt-80 lg:mt-72 lg:flex-row lg:px-48'>
       <div className='flex  flex-col lg:w-full lg:h-1/2  items-start pl-2 bg-[#D3D5D4] lg:rounded-l-lg'>
@@ -28,15 +15,8 @@ const Intro = () => {
             captivating websites with engaging motion interactions.
           </h4>
         </div>
-        <div className='more text-white lg:text-black font-gugi p-2 mt-12 lg:mt-2 w-1/2 flex text-2xl capitalize font-bold gap-2 '>
-          <Link to={"/about"} {...eventHandlers}>
-            more
-          </Link>
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            size='lg'
-            className='lg:text-black text-white -rotate-45'
-          />
+        <div className='text-black  -mt-2'>
+          <WorkButton link='/about' text='More' />
         </div>
       </div>
       <div className='lg:w-1/2 lg:h-3/5 overflow-hidden mt-1 lg:overflow-auto '>
@@ -46,7 +26,7 @@ const Intro = () => {
           className=' h-full w-full object-cover lg:rounded-lg'
         />
       </div>
-    </div>           
+    </div>
   );
 };
 

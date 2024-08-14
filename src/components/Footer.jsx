@@ -7,7 +7,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { useCursor } from "./../hooks/useCursor";
-import { faM, faMugHot } from "@fortawesome/free-solid-svg-icons";
+import { faMugHot } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   const { setIsTouchingLink } = useCursor();
   const handleTouch = () => setIsTouchingLink(true);

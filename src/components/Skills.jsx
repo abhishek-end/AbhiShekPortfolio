@@ -1,7 +1,4 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import TailwindCSS from "./../assets/videos/ezgif.com-video-to-gif-converter.gif";
-import html from "./../assets/videos/html.gif";
-import sass from "./../assets/videos/sass-gif-converter.gif";
 
 const Skills = () => {
   const h4Refs = useRef([]);
@@ -82,8 +79,8 @@ const Skills = () => {
             </sub>
           </h1>
         </div>
-        <div className='flex gap-2 text-white lg:w-10/12 w-11/12 p-1 text-3xl lg:text-4xl md:text-5xl mx-2 font-mono flex-col font-bold bg-black lg:rounded-lg rounded-md lg:px-2'>
-          <div className='flex  w-full h-full  lg:mt-5 mt-3 font-sans text-st gap-1 text-transparent lg:text-transparent]'>
+        <div className='flex gap-2 text-white lg:w-10/12 w-11/12 p-1 text-3xl lg:text-4xl md:text-5xl mx-2 font-spacemono flex-col font-bold bg-black lg:rounded-lg rounded-md lg:px-2'>
+          <div className='flex  w-full h-full  lg:mt-5 mt-3 font-mono text-st gap-1 text-transparent lg:text-transparent]'>
             {["HTML", "CSS", "Javascript"].map((skill, index) => (
               <React.Fragment key={index}>
                 <h4
@@ -100,7 +97,7 @@ const Skills = () => {
             ))}
           </div>
 
-          <div className='flex items-center justify-start lg:mt-7 mt-4 font-sans text-st  gap-1 text-transparent lg:text-black'>
+          <div className='flex items-center justify-start lg:mt-5 mt-4 font-sans text-st  gap-1 text-transparent lg:text-black'>
             {["SASS", "React JS", "GSAP"].map((skill, index) => (
               <React.Fragment key={index + 3}>
                 <h4
@@ -119,7 +116,7 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className='flex items-center justify-start mt-5 lg:mt-6 font-sans text-stroke uppercase  text-transparent lg:text-black '>
+          <div className='flex items-center justify-start mt-5 lg:mt-5 font-sans text-stroke uppercase  text-transparent lg:text-black '>
             <h4
               ref={(el) => (h4Refs.current[6] = el)}
               onMouseEnter={() => handleMouseEnter(6)}
@@ -129,7 +126,7 @@ const Skills = () => {
               TailwindCSS
             </h4>
           </div>
-          <div className='flex items-center justify-start mt-4 text-2xl lg:mb-3 lg:mt-6'>
+          <div className='flex items-center justify-start mt-4 text-2xl lg:mb-3 lg:mt-5'>
             <h1>& Loading...</h1>
           </div>
         </div>
@@ -141,14 +138,13 @@ const Skills = () => {
           className='p-2 w-full h-full object-cover'
         />
         {[
-          html,
+          "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846684/my-images/pxd9xf5bvohyjt1q7wbx.webp",
           "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9t5cstaou0yjbh1gffj.gif",
-          // "https://media2.giphy.com/media/SvFocn0wNMx0iv2rYz/200w.gif?cid=6c09b952rw74ryzomkjlm8ph0v354blgc8ugtd87iemeddrk&ep=v1_gifs_search&rid=200w.gif&ct=g",
-          "https://miro.medium.com/v2/resize:fit:3200/0*de0IdiUSoJTwgsys.gif",
-          sass,
-          "https://miro.medium.com/v2/resize:fit:1400/1*a-HMmQFQNC76zCZBZfFgJg.gif",
-          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo.gif",
-          TailwindCSS,
+          "https://media2.giphy.com/media/SvFocn0wNMx0iv2rYz/200w.gif?cid=6c09b952rw74ryzomkjlm8ph0v354blgc8ugtd87iemeddrk&ep=v1_gifs_search&rid=200w.gif&ct=g",
+          "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846935/my-images/qgv9mqryxsyrevcy8fdh.gif",
+          "https://res.cloudinary.com/dlonoxpli/image/upload/c_crop,g_center,h_0.88,w_0.55/my-images/eeeoshcfliwsezndnmxt.jpg",
+          "https://res.cloudinary.com/dlonoxpli/image/upload/v1723845609/my-images/p2sh0isoxwdlaj3nd9fd.gif",
+          "https://res.cloudinary.com/dlonoxpli/video/upload/v1723847290/my-images/cyguza8uugg6yogn235j.mp4",
         ].map((src, index) => (
           <img
             key={index}

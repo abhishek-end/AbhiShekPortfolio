@@ -6,7 +6,7 @@ const Name = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
   const { setIsTouchingLink } = useCursor();
-  const [randomText, setRandomText] = useState("Unox'd");
+  const [randomText, setRandomText] = useState("Lov?");
 
   const letters = "abcdefghijklmnopqrstuvwxyz";
 
@@ -22,12 +22,12 @@ const Name = () => {
 
     setTimeout(() => {
       clearInterval(intervalId);
-      setRandomText("Good");
+      setRandomText("L♥ves");
     }, 180);
   };
 
   const handleClick = () => {
-    if (randomText === "Unox'd" || randomText === "GOOD") {
+    if (randomText === "Lov?" || randomText === "Loves") {
       scrambleText();
     }
   };
@@ -56,7 +56,7 @@ const Name = () => {
           <h1 className='font-ariata font-bold text-4xl sm:text-4xl whitespace-nowrap  md:text-6xl lg:text-7xl xl:text-9xl text-white capitalize tracking-[1px] sm:tracking-[2px]'>
             abhisheK-Yadav
           </h1>
-          <div className='text-white flex text-xl sm:text-2xl lg:text-4xl xl:text-5xl gap-2 font-bold w-full  items-center justify-center '>
+          <div className='text-white flex text-xl sm:text-2xl mt-5 lg:text-4xl xl:text-5xl  gap-2 font-bold w-full  items-center justify-center '>
             <h4
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -65,8 +65,8 @@ const Name = () => {
             >
               {randomText}
             </h4>
-            <span className='mx-0 sm:mx-2 text-transparent text-stroke text-xl sm:text-2xl lg:text-4xl xl:text-5xl '>
-              Creative Developer
+            <span className='mx-0 sm:mx-2 text-transparent  text-stroke text-xl sm:text-2xl lg:text-4xl xl:text-5xl capitalize'>
+              creating Designs
             </span>
           </div>
         </div>

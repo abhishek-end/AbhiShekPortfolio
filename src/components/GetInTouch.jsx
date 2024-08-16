@@ -71,7 +71,7 @@ const GetInTouch = () => {
 
           <div className='image flex justify-center mt-10 '>
             <img
-              src='https://i.gifer.com/origin/e0/e08f73642d422d94483c0ca96f737ac2_w200.gif'
+              src='https://res.cloudinary.com/dlonoxpli/image/upload/f_auto,q_auto/v1/my-images/bunnygif'
               alt=''
               className=''
             />

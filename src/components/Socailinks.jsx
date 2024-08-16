@@ -25,12 +25,12 @@ const Socailinks = () => {
           Social <br /> Media
         </h4>
       </div>
-      <div className='lg:p-4 lg:flex lg:flex-col lg:w-1/2 rounded-lg bg-black w-2/3 mt-10 lg:mt-8 gap-3 lg:gap-4 flex flex-col bg- p-2'>
+      <div className='lg:text-2xl text-white font-spacemono lg:p-4 lg:flex lg:flex-col lg:w-1/2 rounded-lg bg-black w-2/3 mt-10 lg:mt-8 gap-3 lg:gap-4 flex flex-col bg- p-2'>
         <a
           href='https://www.instagram.com/ab4i_.shek/'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center lg:font-light font-mono  text-white text-2xl space-x-2'
+          className='flex items-center lg:font-light  space-x-2'
         >
           <span {...eventHandlers}>Instagram</span>
           <FontAwesomeIcon icon={faInstagramSquare} />
@@ -39,7 +39,7 @@ const Socailinks = () => {
           href='https://www.linkedin.com/in/abhishek49534'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center  lg:font-light font-mono text-white text-2xl space-x-2'
+          className='flex items-center space-x-2'
         >
           <span {...eventHandlers}>LinkedIn</span>
           <FontAwesomeIcon icon={faLinkedin} />
@@ -48,7 +48,7 @@ const Socailinks = () => {
           href='https://github.com/abhishek-end'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center  lg:font-light font-mono text-white text-2xl space-x-2'
+          className='flex items-center  gap-2'
         >
           <span {...eventHandlers}>GitHub</span>
           <FontAwesomeIcon icon={faGithub} />
@@ -57,7 +57,7 @@ const Socailinks = () => {
           href='https://x.com/'
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center  lg:font-light font-mono text-white text-2xl space-x-2'
+          className='flex items-centerspace-x-2'
         >
           <span {...eventHandlers}>Twitter</span>
           <FontAwesomeIcon icon={faTwitter} />

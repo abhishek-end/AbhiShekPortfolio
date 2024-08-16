@@ -28,7 +28,7 @@ const MyWork = () => {
   ];
 
   return (
-    <div className=' w-full text-white h-[60vh] lg:py-6 mt-32  px-2  lg:-mt-20 mb-20  lg:flex  lg:flex-col lg:px-48'>
+    <div className=' w-full text-white h-[60vh] lg:py-6 mt-32  px-2 mb-20  lg:flex  lg:flex-col lg:px-48'>
       <div className='text-white text-xl uppercase lg:text-7xl  text-center lg:text-left font-extrabold whitespace-wrap w-full  '>
         <h4>MY WORK</h4>
       </div>

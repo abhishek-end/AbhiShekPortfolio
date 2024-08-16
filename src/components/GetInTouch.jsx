@@ -44,7 +44,7 @@ const GetInTouch = () => {
   }, []);
 
   return (
-    <div className='main h-screen w-full relative overflow-hidden rounded-sm lg:flex lg:justify-center '>
+    <div className='main h-screen w-full relative overflow-hidden rounded-sm lg:flex lg:justify-center lg:mt-32 '>
       {/* top-div */}
       <div
         id='top'

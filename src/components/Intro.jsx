@@ -3,7 +3,7 @@ import Image from "./../img/1000192870.png";
 import WorkButton from "./WorkButton";
 const Intro = () => {
   return (
-    <div className='flex lg:justify-center lg:items-center flex-col h-screen w-full mt-80 lg:mt-72 lg:flex-row lg:px-48'>
+    <div className='flex lg:justify-center lg:items-center flex-col h-screen w-full mt-80  lg:flex-row lg:px-48'>
       <div className='flex  flex-col lg:w-full lg:h-1/2  items-start pl-2 bg-[#D3D5D4] lg:rounded-l-lg'>
         <div className='text-black text-7xl md:text-8xl lg:text-9xl font-bold font-oswald w-1/2 h-1/2'>
           {/* {hello world for bio} */}

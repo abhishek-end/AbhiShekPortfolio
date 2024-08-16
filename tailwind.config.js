@@ -8,6 +8,7 @@ export default {
         oswald: ["Oswald , cursive"],
         eleventwenty: ['"Eleventy"', "sans-serif"],
         spacemono: ["Space Mono", "monospace"],
+        ariata: ["Ariata" , "cursive"],
       },
       borderWidth: {
         0.5: "0.5px",

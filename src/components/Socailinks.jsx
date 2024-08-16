@@ -19,7 +19,7 @@ const Socailinks = () => {
   };
 
   return (
-    <div className='lg:w-8/12 lg:h-1/2 flex flex-col w-full h-full mt-32 justify-cente lg:mt-0 bg-[#D3D5D4] rounded-lg lg:p-4  p-2 '>
+    <div className='lg:w-8/12 lg:h-1/2 flex flex-col w-full h-full mt-32 lg:mt-0 bg-[#D3D5D4] rounded-lg lg:p-4  p-2  '>
       <div className='flex flex-col lg:mt-0 lg:w-full lg:justify-center h-1/2'>
         <h4 className='text-black text-7xl lg:text-9xl md:text-8xl uppercase font-extrabold font-oswald '>
           Social <br /> Media

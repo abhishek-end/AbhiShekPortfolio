@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
+  font-family: "Ariata";
+  src: url("https://res.cloudinary.com/dlonoxpli/raw/upload/v1723839710/fonts/f44wuzi0sbhn17fcundp.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Eleventy";
   src: url("/fonts/11.20___.TTF") format("truetype"),
     url("/fonts/11.20___.TTF") format("truetype");

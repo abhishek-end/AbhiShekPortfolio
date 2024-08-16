@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&display=swap");
-@font-face {
-  font-family: "Eleven Twenty";
-  src: url(src/assets/11.20___.TTF);
-  font-weight: normal;
-  font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: "Eleventy";
+  src: url("public/font/11.20___.TTF") format("woff2"),
+    url("public/font/11.20___.TTF") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body,
 html {
   -ms-overflow-style: none; /* Internet Explorer 10+ */

@@ -6,7 +6,8 @@ export default {
       fontFamily: {
         gugi: ["Gugi", "cursive"],
         oswald: ["Oswald , cursive"],
-        eleventwenty: ['"Eleven Twenty"', "sans-serif"],
+        eleventwenty: ['"Eleventy"', "sans-serif"],
+        spacemono: ["Space Mono", "monospace"],
       },
       borderWidth: {
         0.5: "0.5px",

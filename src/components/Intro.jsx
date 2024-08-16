@@ -9,7 +9,7 @@ const Intro = () => {
           {/* {hello world for bio} */}
           <h4 className='leading-none select-none '>{"HELLO WORLD"}</h4>
         </div>
-        <div className=' text-white lg:text-white text-2xl flex rounded-lg lg:p-2 w-11/12 lg:w-full whitespace-wrap font-mono leading-tight mt-12 lg:mt-4 select-none  '>
+        <div className=' text-white lg:text-white text-xl flex rounded-lg lg:p-2 w-11/12 lg:w-full whitespace-wrap font-spacemono   mt-12 lg:mt-4 select-none  '>
           <h4 className='lg:w-1/2 w-full h-full bg-black lg:p-2 px-2 rounded-lg'>
             Hi, I'm Abhishek a creative web developer based in India, crafting
             captivating websites with engaging motion interactions.

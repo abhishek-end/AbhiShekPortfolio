@@ -53,7 +53,7 @@ const Name = () => {
     <>
       <div className='flex justify-center items-center w-full h-screen p-4'>
         <div className='z-50 flex flex-col items-center justify-center '>
-          <h1 className='font-gugi font-bold text-4xl sm:text-4xl whitespace-nowrap  md:text-6xl lg:text-7xl xl:text-9xl text-white capitalize tracking-[1px] sm:tracking-[2px]'>
+          <h1 className='font-eleventwenty font-bold text-4xl sm:text-4xl whitespace-nowrap  md:text-6xl lg:text-7xl xl:text-9xl text-white capitalize tracking-[1px] sm:tracking-[2px]'>
             abhisheK-Yadav
           </h1>
           <div className='text-white flex text-xl sm:text-2xl lg:text-4xl xl:text-5xl gap-2 font-bold w-full  items-center justify-center '>

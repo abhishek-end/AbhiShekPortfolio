@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./../index.css";
@@ -18,13 +18,12 @@ const Navbar = () => {
     onMouseLeave: removeTouch,
     className: "underline-animation text-white",
   };
+
   const navbar = useRef(null);
   const textRefs = useRef([]);
+  const location = useLocation();
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    let tl = gsap.timeline();
-    gsap.set(textRefs.current, { opacity: 1, yPercent: 0 });
-    gsap.to(navbar.current, {
+    const gsapKill = gsap.to(navbar.current, {
       yPercent: -100,
       scrollTrigger: {
         trigger: navbar.current,
@@ -40,40 +39,26 @@ const Navbar = () => {
     // Clean up
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      gsapKill.kill();
     };
-  }, []);
+  }, [location]);
 
   return (
-    <nav
-      ref={navbar}
-      className='py-4 h-full w-full fixed top-0 justify-center  '
-    >
-      <div className='container m-auto  flex lg:justify-between  items-center border-b py-4 gap-2'>
-        <div className='space-x-12 text-white uppercase font-gugi sm:text-lg md:text-xl lg:text-2xl   '>
-          <Link
-            to={"/"}
-            {...commonProps}
-            ref={(el) => (textRefs.current[0] = el)}
-          >
+    <nav ref={navbar} className='py-3 w-full fixed top-0 justify-center  '>
+      <div className='container m-auto  flex lg:justify-between  items-center border-b py-3 gap-2'>
+        <div className='space-x-12 text-white uppercase font-gugi text-sm md:text-lg lg:text-xl   '>
+          <Link to={"/"} {...commonProps}>
             Home
           </Link>
-          <Link
-            to={"/about"}
-            {...commonProps}
-            ref={(el) => (textRefs.current[1] = el)}
-          >
+          <Link to={"/about"} {...commonProps}>
             About
           </Link>
-          <Link
-            to={"/work"}
-            {...commonProps}
-            ref={(el) => (textRefs.current[2] = el)}
-          >
+          <Link to={"/work"} {...commonProps}>
             Work
           </Link>
         </div>
         <div
-          className='md:text-xl lg:text-2xl sm:text-sm text-xl text-white font-bold capitalize underline-animation opacity-0 lg:opacity-100 italic font-[cursive]'
+          className='md:text-xl lg:text-xl sm:text-sm text-xl text-white font-bold capitalize underline-animation opacity-0 lg:opacity-100 italic font-[cursive]'
           onMouseOver={handleTouch}
           onMouseLeave={removeTouch}
         >
@@ -81,7 +66,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );  
+  );
 };
 
 export default Navbar;

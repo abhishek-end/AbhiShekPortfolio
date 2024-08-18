@@ -6,7 +6,7 @@ const Intro = () => {
       <div className='flex  flex-col lg:w-full lg:h-1/2  items-start pl-2 bg-[#D3D5D4] lg:rounded-l-lg'>
         <div className='text-black text-7xl md:text-8xl lg:text-9xl font-bold font-oswald w-1/2 h-1/2 '>
           {/* {hello world for bio} */}
-          <h4>{"HELLO WORLD"}</h4>  
+          <h4>{"HELLO WORLD"}</h4>
         </div>
         <div className=' text-white lg:text-white text-xl flex rounded-lg lg:p-2 w-11/12 lg:w-full whitespace-wrap font-spacemono   mt-12 lg:mt-4 select-none  '>
           <h4 className='lg:w-1/2 w-full h-full bg-black lg:p-2 px-2 rounded-lg'>

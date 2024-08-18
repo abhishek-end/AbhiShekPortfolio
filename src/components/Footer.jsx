@@ -24,54 +24,54 @@ const Footer = () => {
         buy me a coffe
         <FontAwesomeIcon icon={faMugHot} className='mb-1 mx-2' />
       </div>
-      <div className='text-white flex justify-center items-center'>
+      <div className='text-white flex justify-center items-center text-lg'>
         <div className='flex items-start font-oswald gap-4'>
           <a
             href='https://www.instagram.com/ab4i_.shek/'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex items-center text-white text-sm md:text-xl lg:text-2xl gap-2'
+            className='flex items-center text-white  md:text-xl lg:text-2xl gap-2'
           >
             <span {...eventHandlers}>Instagram</span>
             <FontAwesomeIcon
               icon={faInstagramSquare}
-              className='text-sm md:text-xl lg:text-2xl'
+              className='text-lg md:text-xl lg:text-2xl'
             />
           </a>
           <a
             href='https://www.linkedin.com/in/abhishek49534'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex items-center text-white text-sm md:text-xl   lg:text-2xl gap-2'
+            className='flex items-center text-white md:text-xl   lg:text-2xl gap-2'
           >
             <span {...eventHandlers}>LinkedIn</span>
             <FontAwesomeIcon
               icon={faLinkedin}
-              className='text-sm md:text-xl lg:text-2xl'
+              className='text-lg md:text-xl lg:text-2xl'
             />
           </a>
           <a
             href='https://github.com/abhishek-end'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex items-center text-white text-sm md:text-xl  lg:text-2xl gap-2'
+            className='flex items-center text-white md:text-xl  lg:text-2xl gap-2'
           >
             <span {...eventHandlers}>GitHub</span>
             <FontAwesomeIcon
               icon={faGithub}
-              className='text-white text-sm md:text-xl lg:text-2xl'
+              className='text-white text-lg md:text-xl lg:text-2xl'
             />
           </a>
           <a
             href='https://x.com/'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex items-center  text-white text-sm md:text-xl   lg:text-2xl gap-2'
+            className='flex items-center  text-white text-lg md:text-xl   lg:text-2xl gap-2'
           >
             <span {...eventHandlers}>Twitter</span>
             <FontAwesomeIcon
               icon={faTwitter}
-              className='text-sm md:text-xl lg:text-2xl'
+              className='text-lg md:text-xl lg:text-2xl'
             />
           </a>
         </div>

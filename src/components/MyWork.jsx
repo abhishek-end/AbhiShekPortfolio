@@ -15,15 +15,19 @@ const MyWork = () => {
   const data = [
     {
       text: "Lazarev Website Agencey ",
+      link: "view",
     },
     {
       text: "ROLEX WATCH Recreated",
+      link: "view",
     },
     {
       text: "Personal Portfolio",
+      link: "view",
     },
     {
       text: "Project4",
+      link: "view",
     },
   ];
 
@@ -36,12 +40,16 @@ const MyWork = () => {
         {data.map((item, index) => (
           <div
             key={index}
-            className='w-full lg:p-6 border-b  mt-2 lg:mt-0 flex flex-col justify-between '
+            className='w-full lg:p-6 border-b  mt-2 lg:mt-0 flex items-center justify-between text-white text-sm md:text-xl lg:text-2xl capitalize font-gugi font-semibold '
           >
-            <div className=''>
-              <h4 className='text-white text-sm md:text-xl lg:text-2xl capitalize font-gugi font-semibold mt-2'>
-                {item.text}
-              </h4>
+            <div
+              className='hover:px-4 transition-all flex  w-full justify-between
+            '
+            >
+              <h4 className=' mt-2'>{item.text}</h4>
+              <div className='hover'>
+                <h4 className=''>{item.link}</h4>
+              </div>
             </div>
           </div>
         ))}

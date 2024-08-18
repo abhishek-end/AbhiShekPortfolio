@@ -12,6 +12,9 @@ const ScrollMore = () => {
         style={{
           transform: `rotate(${i * 10}deg)`,
           transformOrigin: `0 ${circleRadius}px`,
+          fontSize: `1.3rem`,
+          lineHeight: "1px",
+          // letterSpacing: "1px",
         }}
       >
         {char}
@@ -19,8 +22,8 @@ const ScrollMore = () => {
     ));
   };
   return (
-    <div className='relative w-[180px] h-[180px] lg:-m-16 '>
-      <div className='text rounded-full absolute w-[180px] aspect-square flex justify-center uppercase '>
+    <div className='relative w-[180px] h-[180px] lg:-m-16 -mt-14'>
+      <div className='text absolute w-[180px] aspect-square flex justify-center uppercase'>
         <p>{handleRotateFunction()}</p>
       </div>
     </div>

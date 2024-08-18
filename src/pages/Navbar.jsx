@@ -20,7 +20,6 @@ const Navbar = () => {
   };
 
   const navbar = useRef(null);
-  const textRefs = useRef([]);
   const location = useLocation();
   useEffect(() => {
     const gsapKill = gsap.to(navbar.current, {

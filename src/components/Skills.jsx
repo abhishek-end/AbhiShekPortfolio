@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
-
 const Skills = () => {
   const h4Refs = useRef([]);
   const spanRefs = useRef([]);
@@ -48,6 +47,7 @@ const Skills = () => {
     const handleMouseOut = (e) => {
       spans.forEach((element) => {
         element.style.opacity = "1";
+        ``;
         element.style.transition = ".2s ease";
       });
 
@@ -116,7 +116,7 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className='flex items-center justify-start mt-5 lg:mt-5 font-sans text-stroke uppercase  text-transparent lg:text-black '>
+          <div className='flex items-center justify-start md:mt-1  lg:mt-5  mt-5  uppercase '>
             <h4
               ref={(el) => (h4Refs.current[6] = el)}
               onMouseEnter={() => handleMouseEnter(6)}
@@ -126,7 +126,7 @@ const Skills = () => {
               TailwindCSS
             </h4>
           </div>
-          <div className='flex items-center justify-start mt-4 text-2xl lg:mb-3 lg:mt-5'>
+          <div className='flex items-center justify-start mt-5  lg:mb-3 md:mt-1  lg:mt-2 '>
             <h1>& Loading...</h1>
           </div>
         </div>

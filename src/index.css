@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
+  font-family: "NHaasGroteskDSPro";
+  src: url("https://res.cloudinary.com/dlonoxpli/raw/upload/v1723967713/fonts/v34unugltvgqyedypwm1.ttf")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Ariata";
   src: url("https://res.cloudinary.com/dlonoxpli/raw/upload/v1723839710/fonts/f44wuzi0sbhn17fcundp.otf")
     format("opentype");
@@ -146,4 +154,10 @@ html::-webkit-scrollbar {
   color: black; /* Set text color to transparent */
   -webkit-text-stroke: 1.2px #fff; /* Stroke width and color */
 }
-/* for getintouch scaleX  */
+/* for iamge */
+/* img {
+  object-cover: contain;
+} */
+img {
+  background-size: contain;
+}

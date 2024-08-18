@@ -8,7 +8,12 @@ export default {
         oswald: ["Oswald , cursive"],
         eleventwenty: ['"Eleventy"', "sans-serif"],
         spacemono: ["Space Mono", "monospace"],
-        ariata: ["Ariata" , "cursive"],
+        ariata: ["Ariata", "cursive"],
+        nhaas: ["NHaasGroteskDSPro", "Arial", "sans-serif"],
+      },
+      backgroundImage: {
+        abhishek:
+          "url('https://res.cloudinary.com/dlonoxpli/image/upload/f_auto,q_auto/v1/my-images/abhishekimage')",
       },
       borderWidth: {
         0.5: "0.5px",

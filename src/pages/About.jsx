@@ -3,13 +3,12 @@ import React, { useEffect } from "react";
 import Circle from "./../components/Circle.jsx";
 import GetInTouch from "./../components/GetInTouch.jsx";
 import Footer from "./../components/Footer.jsx";
+import Language from "../components/Language.jsx";
 const About = () => {
   return (
     <>
-      <div className='bg-black flex items-center justify-center h-screen w-full '>
-        <h1 className='text-white  text-3xl font-gugi'>ABOUT ME </h1>
-      </div>
-      <div className='px-48'>
+      <div className='container mx-auto'>
+        <Language/> 
         <GetInTouch />
         <Footer />
       </div>

@@ -12,7 +12,7 @@ import "./../index.css";
 
 const Home = () => {
   return (
-    <div className='container mx-auto select-none  '>
+    <div className='container mx-auto select-none'>
       <Name />
       <Circle />
       <section className='bg-black w-full flex items-start justify-center'>

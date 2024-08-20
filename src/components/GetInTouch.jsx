@@ -48,11 +48,11 @@ const GetInTouch = () => {
       {/* top-div */}
       <div
         id='top'
-        className='w-full h-[50vh] absolute top-0 overflow-hidden bg-[#b6b8b7] '
+        className='w-full h-[50vh] absolute top-0 overflow-hidden   bg-slate-900'
       >
         <h1
           id='t-h1'
-          className='uppercase  text-5xl md:text-6xl lg:text-[12rem] font-extrabold text-black lg:font-oswald whitespace-nowrap'
+          className='uppercase  text-5xl md:text-6xl lg:text-[12rem] font-extrabold text-white lg:font-oswald whitespace-nowrap'
         >
           get-in-touch
         </h1>
@@ -100,11 +100,11 @@ const GetInTouch = () => {
       {/* bottom div */}
       <div
         id='bottom'
-        className='w-full h-[50vh] absolute bottom-0 overflow-hidden bg-[#b6b8b7]'
+        className='w-full h-[50vh] absolute bottom-0 overflow-hidden bg-slate-900'
       >
         <h1
           id='b-h1'
-          className='uppercase text-5xl md:text-6xl lg:text-[12rem] font-extrabold  text-black whitespace-nowrap lg:font-oswald'
+          className='uppercase text-5xl md:text-6xl lg:text-[12rem] font-extrabold  text-white whitespace-nowrap lg:font-oswald'
         >
           get-in-touch
         </h1>

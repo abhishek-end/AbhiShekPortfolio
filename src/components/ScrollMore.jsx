@@ -22,7 +22,7 @@ const ScrollMore = () => {
     ));
   };
   return (
-    <div className='relative w-[180px] h-[180px] lg:-m-16 -mt-14'>
+    <div className='relative w-[180px] h-[180px] lg:-m-16 -mt-28'>
       <div className='text absolute w-[180px] aspect-square flex justify-center uppercase'>
         <p>{handleRotateFunction()}</p>
       </div>

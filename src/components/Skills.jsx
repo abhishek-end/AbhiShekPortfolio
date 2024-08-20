@@ -66,10 +66,10 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='h-[50vh] w-full flex flex-col lg:items-center  md:flex-row lg:flex-row  mt-32 lg:mt-32  relative lg:px-48 lg:p-4 mb-20 lg:mb-0 '>
-      <div className=' lg:h-full lg:w-1/2 bg-[#D3D5D4] lg:rounded-l-lg lg:px-3  w-full h-full'>
-        <div className='lg:mb-6 mb-3'>
-          <h1 className='text-black text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase py-4 lg:py-0 mt-2.5 m-2'>
+    <div className='h-screen sm:h-full w-full flex flex-col items-center lg:flex-row  mt-32 lg:mt-56 relative lg:px-48  lg:mb-0 '>
+      <div className=' lg:h-3/5 lg:w-1/2 lg:rounded-l-lg lg:px-3  w-full h-full p-5 flex flex-col'>
+        <div className='lg:mb-6 mb-5'>
+          <h1 className='text-white text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase lg:py-0 '>
             Skills
             <sub
               className='text-sm lg:text-2xl whitespace-nowrap capitalize'
@@ -79,8 +79,8 @@ const Skills = () => {
             </sub>
           </h1>
         </div>
-        <div className='flex gap-2 text-white lg:w-10/12 w-11/12 p-1 text-3xl lg:text-4xl md:text-5xl mx-2 font-spacemono flex-col font-bold bg-black lg:rounded-lg rounded-md lg:px-2'>
-          <div className='flex  w-full h-full  lg:mt-5 mt-3 font-mono text-st gap-1 text-transparent lg:text-transparent]'>
+        <div className='flex gap-6  text-white lg:w-10/12 w-full text-2xl lg:text-4xl flex-col font-bold  lg:rounded-lg rounded-md lg:px-2 font-ariata'>
+          <div className='flex w-full h-full mt-3 text-white gap-1'>
             {["HTML", "CSS", "Javascript"].map((skill, index) => (
               <React.Fragment key={index}>
                 <h4
@@ -97,7 +97,7 @@ const Skills = () => {
             ))}
           </div>
 
-          <div className='flex items-center justify-start lg:mt-5 mt-4 font-sans text-st  gap-1 text-transparent lg:text-black'>
+          <div className='flex items-center justify-start  gap-1 text-transparent text-white'>
             {["SASS", "React JS", "GSAP"].map((skill, index) => (
               <React.Fragment key={index + 3}>
                 <h4
@@ -116,7 +116,7 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className='flex items-center justify-start md:mt-1  lg:mt-5  mt-5  uppercase '>
+          <div className='flex items-center justify-start'>
             <h4
               ref={(el) => (h4Refs.current[6] = el)}
               onMouseEnter={() => handleMouseEnter(6)}
@@ -126,16 +126,16 @@ const Skills = () => {
               TailwindCSS
             </h4>
           </div>
-          <div className='flex items-center justify-start mt-5  lg:mb-3 md:mt-1  lg:mt-2 '>
+          <div className='flex items-center justify-start '>
             <h1>& Loading...</h1>
           </div>
         </div>
       </div>
-      <div className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0 lg:bg-[#d3d5d4] lg:w-1/2 lg:h-full rounded-r-lg'>
+      <div className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  lg:w-1/2 lg:h-3/5 rounded-r-lg'>
         <img
           src='https://cdn.dribbble.com/users/966681/screenshots/2896143/working.gif'
           alt=''
-          className='p-2 w-full h-full object-cover'
+          className='w-full h-full object-contain'
         />
         {[
           "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846684/my-images/pxd9xf5bvohyjt1q7wbx.webp",
@@ -144,7 +144,6 @@ const Skills = () => {
           "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846935/my-images/qgv9mqryxsyrevcy8fdh.gif",
           "https://res.cloudinary.com/dlonoxpli/image/upload/c_crop,g_center,h_0.88,w_0.55/my-images/eeeoshcfliwsezndnmxt.jpg",
           "https://res.cloudinary.com/dlonoxpli/image/upload/v1723845609/my-images/p2sh0isoxwdlaj3nd9fd.gif",
-          "https://res.cloudinary.com/dlonoxpli/video/upload/v1723847290/my-images/cyguza8uugg6yogn235j.mp4",
         ].map((src, index) => (
           <img
             key={index}

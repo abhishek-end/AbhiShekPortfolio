@@ -29,7 +29,6 @@ const MyWork = () => {
       link: "ab4ishekportfolio.vercel.app",
     },
     {
-      
       text: "Error 404 Project not found",
       link: "view",
     },
@@ -37,8 +36,8 @@ const MyWork = () => {
 
   return (
     <div
-      className=' w-full text-white h-screen  sm:mt-32 flex flex-col transition-all
-     lg:px-48 p-5'
+      className='w-full text-white min-h-screen sm:mt-16 flex flex-col transition-all
+     lg:px-48 p-5 items-center justify-center'
     >
       <div className='text-white text-4xl uppercase lg:text-7xl h-1/2 font-extrabold whitespace-wrap w-full flex items-center '>
         <h4>MY WORK</h4>

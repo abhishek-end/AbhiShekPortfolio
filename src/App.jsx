@@ -13,7 +13,7 @@ import SmoothScroll from "./components/Smooth.jsx";
 const App = () => {
   return (
     <Router>
-        <CursorFollower>
+      <CursorFollower>
         <Navbar />
         <ScrollToTop />
         <SmoothScroll>
@@ -21,12 +21,12 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/work' element={<Work />} />
-            <Route path='*' element={<Error />} />
             <Route path='/workbutton' element={<WorkButton />} />
+            <Route path='*' element={<Error />} />
           </Routes>
         </SmoothScroll>
-    </CursorFollower>
-      </Router>
+      </CursorFollower>
+    </Router>
   );
 };
 

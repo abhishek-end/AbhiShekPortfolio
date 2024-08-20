@@ -6,10 +6,11 @@ export default {
       fontFamily: {
         gugi: ["Gugi", "cursive"],
         oswald: ["Oswald , cursive"],
-        eleventwenty: ['"Eleventy"', "sans-serif"],
+        apple: ["Sue Ellen Francisco", "cursive"],
         spacemono: ["Space Mono", "monospace"],
         ariata: ["Ariata", "cursive"],
         nhaas: ["NHaasGroteskDSPro", "Arial", "sans-serif"],
+        paytone: [ "Almarai", "sans-serif"],
       },
       backgroundImage: {
         abhishek:

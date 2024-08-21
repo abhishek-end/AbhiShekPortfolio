@@ -22,9 +22,8 @@ const Intro = () => {
         y: 100,
         opacity: 0,
         delay: 0.1,
-        marker: true,
         duration: 1.5,
-        ease: "power4.out", 
+        ease: "power4.out",
         stagger: {
           amount: 0.4,
         },
@@ -35,14 +34,13 @@ const Intro = () => {
     const tl = gsap.timeline();
     tl.fromTo(
       bioRef.current,
-      { opacity: 0.4 }, 
+      { opacity: 0.4 },
       {
         opacity: 1,
         duration: 1,
         ease: "power1.out",
         scrollTrigger: {
           trigger: bioRef.current,
-          markers: true,
           start: "top 70%",
           end: "bottom 30%",
           toggleActions: "play none none none",

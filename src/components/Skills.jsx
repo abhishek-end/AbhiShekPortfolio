@@ -1,3 +1,5 @@
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 const Skills = () => {
   const h4Refs = useRef([]);
@@ -65,22 +67,71 @@ const Skills = () => {
     });
   }, []);
 
+  const textRef = useRef([]);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top 90%",
+          end: "bottom 30%",
+        },
+      })
+      .from(textRef.current, {
+        y: "100",
+        duration: 0.5,
+        opacity: 0,
+
+        stagger: {
+          amount: 0.4,
+        },
+      });
+  }, []);
+  const imageRef = useRef();
+  useEffect(() => {
+    gsap.fromTo(
+      imageRef.current,
+      {
+        x: "100%",
+        opacity: 0,
+      },
+      {
+        x: "0%",
+        opacity: 1,
+        duration: 1.5,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: imageRef.current,
+          start: "top 80%",
+          end: "bottom 30%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
   return (
-    <div className='h-screen sm:h-full w-full flex flex-col items-center lg:flex-row  mt-32 lg:mt-56 relative lg:px-48  lg:mb-0 '>
-      <div className=' lg:h-3/5 lg:w-1/2 lg:rounded-l-lg lg:px-3  w-full h-full p-5 flex flex-col'>
-        <div className='lg:mb-6 mb-5'>
-          <h1 className='text-white text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase lg:py-0 '>
+    <div className='h-screen sm:h-full w-full flex flex-col items-center lg:flex-row  mt-32 lg:mt-56 relative lg:px-48  lg:mb-0  '>
+      <div className=' lg:h-3/5 lg:w-1/2 lg:rounded-l-lg lg:px-3  w-full h-full p-5 flex flex-col '>
+        <div className='lg:mb-6 h-[6rem] w-full overflow-hidden lg:h-full flex items-center '>
+          <h1
+            className='text-white text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase lg:py-0 p-2'
+            ref={(el) => (textRef.current[0] = el)}
+          >
             Skills
             <sub
-              className='text-sm lg:text-2xl whitespace-nowrap capitalize'
+              className='text-sm lg:text-2xl whitespace-nowrap capitalize mb-2'
               style={{ opacity: fade, transition: "1s all ease-out" }}
             >
               {hover}
             </sub>
           </h1>
         </div>
-        <div className='flex gap-6  text-white lg:w-10/12 w-full text-2xl lg:text-4xl flex-col font-bold  lg:rounded-lg rounded-md lg:px-2 font-ariata'>
-          <div className='flex w-full h-full mt-3 text-white gap-1'>
+        <div className='flex gap-3  text-white lg:w-10/12 w-full text-2xl lg:text-4xl flex-col font-bold  lg:rounded-lg rounded-md lg:px-2  font-ariata h-full'>
+          <div
+            className='flex w-full p-2 items-center  text-white gap-1'
+            ref={(el) => (textRef.current[1] = el)}
+          >
             {["HTML", "CSS", "Javascript"].map((skill, index) => (
               <React.Fragment key={index}>
                 <h4
@@ -97,7 +148,10 @@ const Skills = () => {
             ))}
           </div>
 
-          <div className='flex items-center justify-start  gap-1 text-transparent text-white'>
+          <div
+            className='flex items-center justify-start  gap-1 text-transparent text-white  p-1 '
+            ref={(el) => (textRef.current[2] = el)}
+          >
             {["SASS", "React JS", "GSAP"].map((skill, index) => (
               <React.Fragment key={index + 3}>
                 <h4
@@ -116,7 +170,10 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className='flex items-center justify-start'>
+          <div
+            className='flex items-center justify-start p-2 '
+            ref={(el) => (textRef.current[3] = el)}
+          >
             <h4
               ref={(el) => (h4Refs.current[6] = el)}
               onMouseEnter={() => handleMouseEnter(6)}
@@ -126,13 +183,19 @@ const Skills = () => {
               TailwindCSS
             </h4>
           </div>
-          <div className='flex items-center justify-start '>
+          <div
+            className='flex items-center justify-start p-2'
+            ref={(el) => (textRef.current[4] = el)}
+          >
             <h1>& Loading...</h1>
           </div>
         </div>
       </div>
-      <div className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  lg:w-1/2 lg:h-3/5 rounded-r-lg'>
+      <div
+        className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  lg:w-1/2 lg:h-3/5 rounded-r-lg overflow-hidden'
+        >
         <img
+        ref={imageRef}
           src='https://cdn.dribbble.com/users/966681/screenshots/2896143/working.gif'
           alt=''
           className='w-full h-full object-contain'

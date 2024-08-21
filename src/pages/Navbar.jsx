@@ -16,10 +16,23 @@ const Navbar = () => {
   const commonProps = {
     onMouseEnter: handleTouch,
     onMouseLeave: removeTouch,
-    className: "underline-animation text-white",
+    className:
+      "underline-animation text-white transition-all duration-300 hover:text-gray-300",
   };
 
   const navbar = useRef(null);
+  const textRef = useRef([]);
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.from(textRef.current, {
+      y: "100%",
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      stagger: 0.5,
+    });
+  }, []);
+
   const location = useLocation();
   useEffect(() => {
     const gsapKill = gsap.to(navbar.current, {
@@ -45,7 +58,10 @@ const Navbar = () => {
   return (
     <nav ref={navbar} className='py-3 w-full fixed top-0 justify-center  '>
       <div className='container m-auto  flex lg:justify-between  items-center border-b py-3 gap-2'>
-        <div className='space-x-12 text-white uppercase font-gugi text-sm md:text-lg lg:text-xl   '>
+        <div
+          className='space-x-12 text-white uppercase font-gugi text-sm md:text-lg lg:text-xl'
+          ref={(el) => (textRef.current[0] = el)}
+        >
           <Link to={"/"} {...commonProps}>
             Home
           </Link>
@@ -60,6 +76,7 @@ const Navbar = () => {
           className='md:text-xl lg:text-xl sm:text-sm text-xl text-white font-bold capitalize underline-animation opacity-0 lg:opacity-100 italic font-[cursive]'
           onMouseOver={handleTouch}
           onMouseLeave={removeTouch}
+          ref={(el) => (textRef.current[1] = el)}
         >
           /resume
         </div>

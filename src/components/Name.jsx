@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useCursor } from "../hooks/useCursor.jsx";
 import "./../index.css";
+import gsap from "gsap";
 
 const Name = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -9,6 +10,30 @@ const Name = () => {
   const [randomText, setRandomText] = useState("Lov?");
 
   const letters = "abcdefghijklmnopqrstuvwxyz";
+  const nameRef = useRef([]);
+  const spanRef = useRef([]);
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.from(
+      nameRef.current,
+      {
+        y: "100%",
+        opacity: 0,
+        duration: 0.5,
+        ease: "power3.out", //
+        stagger: 0.05,
+      },
+      "a"
+    ).from(
+      spanRef.current,
+      {
+        y: "100%",
+        opacity: 0,
+        duration: 0.5,
+      },
+      "a"
+    );
+  }, []);
 
   const scrambleText = () => {
     let intervalId = setInterval(() => {
@@ -49,12 +74,21 @@ const Name = () => {
       document.body.removeEventListener("pointerleave", handlePointerLeave);
     };
   }, []);
+  const name = "Abhishek-Yadav";
   return (
     <>
       <div className='flex justify-center items-center w-full h-screen p-4'>
         <div className='z-50 flex flex-col items-center justify-center '>
-          <h1 className='font-ariata font-bold text-4xl sm:text-4xl whitespace-nowrap  md:text-6xl lg:text-7xl xl:text-9xl text-white capitalize tracking-[1px] sm:tracking-[2px]'>
-            abhisheK-Yadav
+          <h1 className='font-ariata font-bold text-4xl sm:text-4xl whitespace-nowrap md:text-6xl lg:text-7xl xl:text-9xl text-white  tracking-[1px] sm:tracking-[2px] overflow-hidden '>
+            {name.split("").map((char, index) => (
+              <span
+                key={index}
+                ref={(el) => (nameRef.current[index] = el)}
+                className='inline-block '
+              >
+                {char}
+              </span>
+            ))}
           </h1>
           <div className='text-white flex text-xl sm:text-2xl mt-5 lg:text-4xl xl:text-5xl  gap-2 font-bold w-full  items-center justify-center '>
             <h4
@@ -62,10 +96,14 @@ const Name = () => {
               onMouseLeave={handleMouseLeave}
               onClick={handleClick}
               className='transition-all sm:mb-0'
+              ref={(el) => (spanRef.current[0] = el)}
             >
               {randomText}
             </h4>
-            <span className='mx-0 sm:mx-2 text-transparent  text-stroke text-xl sm:text-2xl lg:text-4xl xl:text-5xl capitalize'>
+            <span
+              className='mx-0 sm:mx-2 text-transparent  text-stroke text-xl sm:text-2xl lg:text-4xl xl:text-5xl capitalize'
+              ref={(el) => (spanRef.current[1] = el)}
+            >
               creating Designs
             </span>
           </div>

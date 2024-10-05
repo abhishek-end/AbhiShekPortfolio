@@ -40,7 +40,6 @@ const GetInTouch = () => {
       .to("#t-h1", { bottom: "50%" }, "a")
       .to("#b-h1", { bottom: "-50%" }, "a")
       .to("#center", { top: "0%" }, "a");
-    // .fromTo("#center", { opacity: 0 }, { opacity: 1 }, "<");
   }, []);
 
   return (
@@ -48,11 +47,11 @@ const GetInTouch = () => {
       {/* top-div */}
       <div
         id='top'
-        className='w-full h-[50vh] absolute top-0 overflow-hidden   bg-slate-900'
+        className='w-full h-[50vh] absolute top-0 overflow-hidden   bg-[#fac230]'
       >
         <h1
           id='t-h1'
-          className='uppercase  text-5xl md:text-6xl lg:text-[12rem] font-extrabold text-white lg:font-oswald whitespace-nowrap'
+          className='uppercase  text-5xl md:text-6xl lg:text-[12rem] font-extrabold text-black lg:font-oswald whitespace-nowrap'
         >
           get-in-touch
         </h1>
@@ -62,7 +61,7 @@ const GetInTouch = () => {
 
       <div
         id='center'
-        className='w-full h-screen bg-black absolute flex justify-center items-end  -z-10 '
+        className='w-full h-screen  absolute flex justify-center items-end '
       >
         <div className='content flex flex-col w-full '>
           <h4 className='text-4xl md:text-6xl lg:text-9xl font-extrabold text-white whitespace-nowrap font-oswald text-center'>
@@ -100,11 +99,11 @@ const GetInTouch = () => {
       {/* bottom div */}
       <div
         id='bottom'
-        className='w-full h-[50vh] absolute bottom-0 overflow-hidden bg-slate-900'
+        className='w-full h-[50vh] absolute bottom-0 overflow-hidden bg-[#fac230]'
       >
         <h1
           id='b-h1'
-          className='uppercase text-5xl md:text-6xl lg:text-[12rem] font-extrabold  text-white whitespace-nowrap lg:font-oswald'
+          className='uppercase text-5xl md:text-6xl lg:text-[12rem] font-extrabold  text-black whitespace-nowrap lg:font-oswald'
         >
           get-in-touch
         </h1>

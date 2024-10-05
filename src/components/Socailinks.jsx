@@ -39,17 +39,17 @@ const Socailinks = () => {
       });
   }, []);
   return (
-    <div className='lg:w-8/12 lg:h-1/2 flex flex-col w-full h-full mt-32 lg:mt-56  rounded-lg lg:p-4  p-2  '>
-      <div className='flex flex-col lg:mt-0 lg:w-full lg:justify-center h-1/2 overflow-hidden'>
+    <div className='md:w-8/12 md:h-1/2 flex flex-col w-full h-full   rounded-lg  md:absolute bottom-0 md:opacity-0 xl:opacity-100 mt-20 '>
+      <div className='flex flex-col  lg:w-full lg:justify-center h-1/2 overflow-hidden'>
         <h4
-          className='text-white text-7xl lg:text-9xl md:text-8xl uppercase font-extrabold font-oswald'
+          className='text-white text-7xl  uppercase font-extrabold font-oswald'
           ref={(el) => (textRef.current[0] = el)}
         >
           Social <br /> Media
         </h4>
       </div>
       <div
-        className='lg:text-2xl text-white font-spacemono lg:p-4 lg:flex lg:flex-col lg:w-1/2 rounded-lg bg-black w-2/3 mt-10 lg:mt-8 gap-3 lg:gap-4 flex flex-col bg- p-2 '
+        className='lg:text-2xl text-white font-spacemono lg:p-4 lg:flex lg:flex-col lg:w-1/2 rounded-lg w-2/3   mt-5 gap-3 lg:gap-4 flex flex-col bg- p-2 text-2xl'
         ref={(el) => (textRef.current[2] = el)}
       >
         <a

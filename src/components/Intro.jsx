@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import WorkButton from "./WorkButton";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Socailinks from "./Socailinks";
 gsap.registerPlugin(ScrollTrigger);
 
 const Intro = () => {
@@ -70,36 +71,39 @@ const Intro = () => {
     );
   }, []);
   return (
-    <div className='flex lg:justify-center lg:items-center flex-col sm:h-[50vh] lg:h-full  w-full mt-80  lg:flex-row lg:px-48'>
-      <div className='flex  flex-col lg:w-full lg:h-1/2  items-start pl-2  lg:rounded-l-lg '>
-        <div className='text-white  text-7xl md:text-8xl sm:text-9xl  lg:text-9xl font-bold font-oswald w-1/2 h-1/2 overflow-hidden'>
-          {/* {hello world for bio} */}
-          <h4 ref={(el) => (helloWorldRef.current[0] = el)}>{"HELLO WORLD"}</h4>
+    <div className='flex h-full  w-full mt-80 flex-col md:flex-row md:relative p-4'>
+      <div className='  md:w-1/2 '>
+        <div className='text-white  text-7xl font-bold font-oswald  md:h-fit overflow-hidden'>
+          <h4 ref={(el) => (helloWorldRef.current[0] = el)}>
+            HELLO <br />
+            WORLD
+          </h4>
         </div>
         <div className=' text-white text-xl flex rounded-lg lg:p-2 w-11/12 lg:w-full whitespace-wrap font-spacemono   mt-12 lg:mt-4 select-none  '>
           <h4
-            className='lg:w-1/2  h-full  lg:p-2 px-2 rounded-lg lg:mt-0'
+            className='lg:w-1/2  h-full  lg:p-2 px-2 rounded-lg lg:mt-0 mb-5'
             ref={bioRef}
           >
-            Hi, I'm Abhishek a front-end developer who loves design based in
-            India, craft website with engaging and motions
+            "Hiii, I'm Abhishek, a Full Stack Developer who loves design and
+            crafts websites with engaging animations." {"(;"}
           </h4>
         </div>
         <div
-          className='text-white mt-10 mb-10'
+          className='text-white mb-5'
           ref={(el) => (helloWorldRef.current[1] = el)}
         >
           <WorkButton link='/about' text='More' />
         </div>
       </div>
-      <div className='w-full lg:w-1/2 lg:h-3/5 mt-10 lg:mt-1 opacity-1  lg:opacity-0 xl:opacity-100 sm:opacity-0 md:opacity-0 overflow-hidden'>
+      <div className='md:w-1/2 overflow-hidden'>
         <img
-          src='https://res.cloudinary.com/dlonoxpli/image/upload/f_auto,q_auto/v1/my-images/abhishekimage'
+          src='https://res.cloudinary.com/dlonoxpli/image/upload/v1724053009/my-images/xrh1j3ymgaumx3vp8wkn.png'
           alt='Description of image'
-          className='h-auto w-full object-cover lg:rounded-lg '
+          className='h-auto w-full object-cover lg:rounded-lg border-8 border-[#F3CA20] rounded-sm '
           ref={imageRef}
         />
       </div>
+      <Socailinks />
     </div>
   );
 };

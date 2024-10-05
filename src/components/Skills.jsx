@@ -111,11 +111,11 @@ const Skills = () => {
     );
   }, []);
   return (
-    <div className='h-screen sm:h-full w-full flex flex-col items-center lg:flex-row  mt-32 lg:mt-56 relative lg:px-48  lg:mb-0  '>
-      <div className=' lg:h-3/5 lg:w-1/2 lg:rounded-l-lg lg:px-3  w-full h-full p-5 flex flex-col '>
-        <div className='lg:mb-6 h-[6rem] w-full overflow-hidden lg:h-full flex items-center '>
+    <div className=' h-full w-full flex flex-col  md:flex-row  md:mt-52 relative p-4 mt-24 '>
+      <div className='md:w-1/2   flex flex-col'>
+        <div className=' w-full overflow-hidden   flex items-center md:h-1/3 mb-5 '>
           <h1
-            className='text-white text-5xl lg:text-9xl  font-extrabold  font-oswald uppercase lg:py-0 p-2'
+            className='text-white text-5xl md:text-7xl  font-extrabold  font-oswald uppercase lg:py-0 p-2'
             ref={(el) => (textRef.current[0] = el)}
           >
             Skills
@@ -127,7 +127,7 @@ const Skills = () => {
             </sub>
           </h1>
         </div>
-        <div className='flex gap-3  text-white lg:w-10/12 w-full text-2xl lg:text-4xl flex-col font-bold  lg:rounded-lg rounded-md lg:px-2  font-ariata h-full'>
+        <div className='flex gap-3  justify-center text-white  w-full md:text-3xl  text-xl flex-col font-bold  rounded-md   font-ariata h-full md:w-3/5'>
           <div
             className='flex w-full p-2 items-center  text-white gap-1'
             ref={(el) => (textRef.current[1] = el)}
@@ -152,13 +152,13 @@ const Skills = () => {
             className='flex items-center justify-start  gap-1 text-transparent text-white  p-1 '
             ref={(el) => (textRef.current[2] = el)}
           >
-            {["SASS", "React JS", "GSAP"].map((skill, index) => (
+            {["SASS", "Tailwind", "GSAP"].map((skill, index) => (
               <React.Fragment key={index + 3}>
                 <h4
                   ref={(el) => (h4Refs.current[index + 3] = el)}
                   onMouseEnter={() => handleMouseEnter(index + 3)}
                   onMouseLeave={handleMouseLeave}
-                  className='capitalize'
+                  className=''
                 >
                   {skill}
                 </h4>
@@ -171,48 +171,72 @@ const Skills = () => {
             ))}
           </div>
           <div
-            className='flex items-center justify-start p-2 '
+            className='flex items-center justify-start  gap-1 text-transparent text-white  p-1 '
             ref={(el) => (textRef.current[3] = el)}
           >
+            {["MongoDB", "Express.js", "React.jS"].map((skill, index) => (
+              <React.Fragment key={index + 6}>
+                <h4
+                  ref={(el) => (h4Refs.current[index + 6] = el)}
+                  onMouseEnter={() => handleMouseEnter(index + 6)}
+                  onMouseLeave={handleMouseLeave}
+                  className='capitalize'
+                >
+                  {skill}
+                </h4>
+                {index < 2 && (
+                  <span ref={(el) => (spanRefs.current[index + 4] = el)}>
+                    —
+                  </span>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+          <div
+            className='flex items-center justify-start gap-1 p-2  '
+            ref={(el) => (textRef.current[4] = el)}
+          >
             <h4
-              ref={(el) => (h4Refs.current[6] = el)}
-              onMouseEnter={() => handleMouseEnter(6)}
+              ref={(el) => (h4Refs.current[9] = el)}
+              onMouseEnter={() => handleMouseEnter(9)}
               onMouseLeave={handleMouseLeave}
               className='capitalize'
             >
-              TailwindCSS
+              Node.js
             </h4>
           </div>
-          <div
+          {/* <div
             className='flex items-center justify-start p-2'
-            ref={(el) => (textRef.current[4] = el)}
+            ref={(el) => (textRef.current[5] = el)}
           >
             <h1>& Loading...</h1>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div
-        className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  lg:w-1/2 lg:h-3/5 rounded-r-lg overflow-hidden'
-        >
+      <div className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  md:w-1/2  rounded-r-lg overflow-hidden bg-black'>
         <img
-        ref={imageRef}
+          ref={imageRef}
           src='https://cdn.dribbble.com/users/966681/screenshots/2896143/working.gif'
           alt=''
-          className='w-full h-full object-contain'
+          className='w-full h-full object-contain '
         />
         {[
           "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846684/my-images/pxd9xf5bvohyjt1q7wbx.webp",
           "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9t5cstaou0yjbh1gffj.gif",
           "https://media2.giphy.com/media/SvFocn0wNMx0iv2rYz/200w.gif?cid=6c09b952rw74ryzomkjlm8ph0v354blgc8ugtd87iemeddrk&ep=v1_gifs_search&rid=200w.gif&ct=g",
           "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846935/my-images/qgv9mqryxsyrevcy8fdh.gif",
-          "https://res.cloudinary.com/dlonoxpli/image/upload/c_crop,g_center,h_0.88,w_0.55/my-images/eeeoshcfliwsezndnmxt.jpg",
+          "https://www.devonblog.com/wp-content/uploads/2022/06/tailwind-thumb.jpg",
           "https://res.cloudinary.com/dlonoxpli/image/upload/v1723845609/my-images/p2sh0isoxwdlaj3nd9fd.gif",
+          "https://shorturl.at/QFNH9",
+          "https://colaninfotech.com/wp-content/uploads/2021/09/expressjs.gif",
+          "https://res.cloudinary.com/dlonoxpli/image/upload/c_crop,g_center,h_0.88,w_0.55/my-images/eeeoshcfliwsezndnmxt.jpg",
+          "https://user-images.githubusercontent.com/97989643/224550089-f2541ade-c5c6-4afa-8538-51a8dda4e23b.gif",
         ].map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`gif for skill ${index}`}
-            className={`w-full h-full absolute transition-opacity duration-300  roundd-r-lg ${
+            className={`w-full h-full absolute transition-opacity duration-300  rounded-lg ${
               isHoverActive === index ? "opacity-100" : "opacity-0"
             }`}
           />

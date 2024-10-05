@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import WorkButton from "./WorkButton.jsx";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import LinkItem from "./Link.jsx";
 const MyWork = () => {
   const data = [
     {
@@ -74,37 +75,18 @@ const MyWork = () => {
 
   return (
     <div
-      className=' w-full text-white h-screen  sm:mt-32 flex flex-col transition-all
-     lg:px-48 p-5'
+      className=' w-full text-white h-screen  sm:mt-32 flex flex-col transition-all p-5'
     >
       <div className='text-white text-4xl uppercase lg:text-9xl h-1/4  font-extrabold whitespace-wrap w-full flex items-end overflow-hidden'>
         <h4 ref={workRef}>WORK</h4>
       </div>
       <div className='w-full h-full  lg:mt-10 '>
         {data.map((item, index) => (
-          <div
-            key={index}
-            className='w-full lg:p-6 border-b  mt-4 lg:mt-0 text-sm md:text-xl lg:text-2xl capitalize font-gugi font-semibold overflow-hidden
-            '
-            ref={(el) => (textRef.current[index] = el)}
-          >
-            <div className='hover:px-4 lg:hover:px-10 transition-all flex  w-full  justify-between h-full rounded-full items-center '>
-              <h4 className=' mt-2 '>{item.text}</h4>
-
-              <a
-                href={item.link}
-                target='_blank'
-                className='underline-animation'
-              >
-                View
-              </a>
-            </div>
+          <div key={index} ref={(el) => (textRef.current[index] = el)}>
+            <LinkItem text={item.text} link={item.link} />
           </div>
         ))}
-        <div
-          className='mt-5 md:px-6 '
-          ref={(el) => (textRef.current[data.length] = el)}
-        >
+        <div className='mt-5 md:px-6'>
           <WorkButton link='/work' text='Work' />
         </div>
       </div>

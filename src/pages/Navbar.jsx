@@ -56,8 +56,11 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav ref={navbar} className='py-3 w-full fixed top-0 justify-center  '>
-      <div className='container m-auto  flex lg:justify-between  items-center border-b py-3 gap-2'>
+    <nav
+      ref={navbar}
+      className='py-3 w-full fixed top-0 justify-center px-5 sm:px-0 '
+    >
+      <div className='container m-auto  flex justify-between  items-center border-b py-3 gap-2'>
         <div
           className='space-x-12 text-white uppercase font-gugi text-sm md:text-lg lg:text-xl'
           ref={(el) => (textRef.current[0] = el)}
@@ -73,12 +76,22 @@ const Navbar = () => {
           </Link>
         </div>
         <div
-          className='md:text-xl lg:text-xl sm:text-sm text-xl text-white font-bold capitalize underline-animation opacity-0 lg:opacity-100 italic font-[cursive]'
           onMouseOver={handleTouch}
           onMouseLeave={removeTouch}
           ref={(el) => (textRef.current[1] = el)}
         >
-          /resume
+          <a
+            href={
+              "https://drive.google.com/file/d/1KhZ5DJcq8TJedxkizEGpv8k8KRsiIQe3/view?usp=drive_link"
+            }
+            download='abhishek_yadav_resume.pdf'
+            className='md:text-xl lg:text-xl sm:text-sm text-xl text-[#fac230] font-bold  underline-animation  font-mono'
+            onMouseOver={handleTouch}
+            onMouseLeave={removeTouch}
+            ref={(el) => (textRef.current[1] = el)}
+          >
+            /resume
+          </a>
         </div>
       </div>
     </nav>

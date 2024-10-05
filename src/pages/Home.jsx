@@ -19,9 +19,6 @@ const Home = () => {
         <ScrollMore />
       </section>
       <Intro />
-      <div className='lg:px-48 lg:mt-3 flex justify-start items-center'>
-        <Socailinks />
-      </div>
       <Skills />
       <MyWork />
       <GetInTouch />

@@ -43,7 +43,7 @@ const GetInTouch = () => {
   }, []);
 
   return (
-    <div className='main h-screen w-full relative overflow-hidden rounded-sm lg:flex lg:justify-center lg:mt-32 '>
+    <div className='main h-screen w-full relative overflow-hidden rounded-3xl lg:flex lg:justify-center lg:mt-32 mt-20'>
       {/* top-div */}
       <div
         id='top'
@@ -61,7 +61,7 @@ const GetInTouch = () => {
 
       <div
         id='center'
-        className='w-full h-screen  absolute flex justify-center items-end '
+        className='w-full h-screen  absolute flex justify-center items-end hover:scale-[1.02] transition-transform'
       >
         <div className='content flex flex-col w-full '>
           <h4 className='text-4xl md:text-6xl lg:text-9xl font-extrabold text-white whitespace-nowrap font-oswald text-center'>
@@ -99,7 +99,7 @@ const GetInTouch = () => {
       {/* bottom div */}
       <div
         id='bottom'
-        className='w-full h-[50vh] absolute bottom-0 overflow-hidden bg-[#fac230]'
+        className='w-full h-[50vh] absolute bottom-0 overflow-hidden bg-[#fac230] '
       >
         <h1
           id='b-h1'

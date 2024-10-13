@@ -114,11 +114,6 @@ html::-webkit-scrollbar {
   background-color: red;
 }
 
-/* mywork  */
-.dhak {
-  animation: dhak-dhak infinite 3s ease-in-out;
-}
-
 @keyframes dhak-dhak {
   0% {
     transform: scale(1);

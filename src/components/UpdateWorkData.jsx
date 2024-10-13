@@ -3,6 +3,7 @@ import WorkButton from "./WorkButton.jsx";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import LinkItem from "./Link.jsx";
+import ProjectAdding from "./Works/ProjectAdding.jsx";
 const MyWork = () => {
   const data = [
     {
@@ -75,9 +76,10 @@ const MyWork = () => {
 
   return (
     <div
-      className=' w-full text-white h-screen  sm:mt-32 flex flex-col transition-all p-5'
+      className=' w-full text-white h-screen   grid lg:grid-row-1 sm:mt-28 items-center transition-all
+    p-5'
     >
-      <div className='text-white text-4xl uppercase lg:text-9xl h-1/4  font-extrabold whitespace-wrap w-full flex items-end overflow-hidden'>
+      <div className='text-white text-4xl uppercase lg:text-8xl h-1/2  font-extrabold whitespace-wrap w-full grid items-end overflow-hidden'>
         <h4 ref={workRef}>WORK</h4>
       </div>
       <div className='w-full h-full  lg:mt-10 '>
@@ -90,6 +92,7 @@ const MyWork = () => {
           <WorkButton link='/work' text='Work' />
         </div>
       </div>
+   
     </div>
   );
 };

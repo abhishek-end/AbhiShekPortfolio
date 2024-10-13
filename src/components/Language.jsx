@@ -63,10 +63,9 @@ const Language = () => {
         </div>
         <div className='text-3xl text-white sm:text-4xl sm:leading-10 md:text-5xl  lg:w-5/6 leading-normal  break-words w-full h-full overflow-hidden'>
           <h4 className='text-pretty whitespace-nowrap text-center font-paytone leading-relaxed'>
-            I am frontend developer from India, passionate about creating
-            Specializing in animations and motion, I merge creativity with
-            technology to craft visually appealing and interactive user
-            experiences.
+            I am frontend developer , passionate about creating Specializing in
+            animations and motion, I merge creativity with technology to craft
+            visually appealing and interactive user experiences.
           </h4>
         </div>
       </div>

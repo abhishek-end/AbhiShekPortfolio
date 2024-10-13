@@ -9,6 +9,8 @@ import MyWork from "../components/MyWork";
 import GetInTouch from "../components/GetInTouch";
 import Footer from "../components/Footer";
 import "./../index.css";
+import MainWork from "../components/Works/MainWokr";
+import ParentWork from "../components/Works/ParentWork";
 
 const Home = () => {
   return (
@@ -21,6 +23,7 @@ const Home = () => {
       <Intro />
       <Skills />
       <MyWork />
+      <ParentWork />
       <GetInTouch />
       <Footer />
     </div>

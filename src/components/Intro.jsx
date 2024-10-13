@@ -53,7 +53,7 @@ const Intro = () => {
     gsap.fromTo(
       imageRef.current,
       {
-        x: "100%",
+        x: "-100%",
         opacity: 0,
       },
       {
@@ -63,7 +63,7 @@ const Intro = () => {
         ease: "power4.out",
         scrollTrigger: {
           trigger: imageRef.current,
-          start: "top 80%",
+          start: "top 70%",
           end: "bottom 30%",
           toggleActions: "play none none none",
         },

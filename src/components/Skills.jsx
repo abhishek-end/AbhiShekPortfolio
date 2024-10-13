@@ -93,29 +93,32 @@ const Skills = () => {
     gsap.fromTo(
       imageRef.current,
       {
-        x: "100%",
+        x: "-90%",
         opacity: 0,
       },
       {
         x: "0%",
+        // width: "100%",
         opacity: 1,
         duration: 1.5,
         ease: "power4.out",
         scrollTrigger: {
           trigger: imageRef.current,
-          start: "top 80%",
+          start: "top 70%",
+          // markers: true,
           end: "bottom 30%",
           toggleActions: "play none none none",
+          // scrub: true,
         },
       }
     );
   }, []);
   return (
-    <div className=' h-full w-full flex flex-col  md:flex-row  md:mt-52 relative p-4 mt-24 '>
-      <div className='md:w-1/2   flex flex-col'>
+    <div className=' h-full w-full flex flex-col  sm:flex-row  md:mt-52 relative p-4 mt-24 gap-10'>
+      <div className='sm:w-1/2 overflow-hidden flex flex-col'>
         <div className=' w-full overflow-hidden   flex items-center md:h-1/3 mb-5 '>
           <h1
-            className='text-white text-5xl md:text-7xl  font-extrabold  font-oswald uppercase lg:py-0 p-2'
+            className='text-white text-6xl md:text-7xl  font-extrabold  font-oswald uppercase lg:py-0 p-2'
             ref={(el) => (textRef.current[0] = el)}
           >
             Skills
@@ -147,7 +150,6 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
-
           <div
             className='flex items-center justify-start  gap-1 text-transparent text-white  p-1 '
             ref={(el) => (textRef.current[2] = el)}
@@ -213,12 +215,12 @@ const Skills = () => {
           </div> */}
         </div>
       </div>
-      <div className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  md:w-1/2  rounded-r-lg overflow-hidden bg-black'>
+      <div className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  md:w-2/5  rounded-r-lg overflow-hidden bg-black opacity-70'>
         <img
           ref={imageRef}
           src='https://cdn.dribbble.com/users/966681/screenshots/2896143/working.gif'
           alt=''
-          className='w-full h-full object-contain '
+          className='w-full h-full object-cover border-8 rounded-2xl border-[#fac243] '
         />
         {[
           "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846684/my-images/pxd9xf5bvohyjt1q7wbx.webp",
@@ -236,7 +238,7 @@ const Skills = () => {
             key={index}
             src={src}
             alt={`gif for skill ${index}`}
-            className={`w-full h-full absolute transition-opacity duration-300  rounded-lg ${
+            className={`w-full h-full absolute transition-opacity duration-300 rounded-2xl border border-[#fac243] ${
               isHoverActive === index ? "opacity-100" : "opacity-0"
             }`}
           />

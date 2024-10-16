@@ -36,31 +36,24 @@ const ParentWork = () => {
   const imageRefs = useRef([]);
 
   useEffect(() => {
-    const animations = imageRefs.current.map((ref, index) => {
-      if (ref) {
-        return gsap.fromTo(
-          ref,
-          {
-            x: "-100%",
-            opacity: 0,
-          },
-          {
+    if (imageRefs.current.length > 0) {
+      ScrollTrigger.batch(imageRefs.current, {
+        onEnter: (batch) => {
+          gsap.to(batch, {
             x: "0%",
-            width: "100%",
             opacity: 1,
             duration: 1.5,
             ease: "power4.out",
-            scrollTrigger: {
-              trigger: ref,
-              start: "top 70%",
-              end: "bottom 30%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      }
-      return null;
-    });
+            stagger: 0.1,
+          });
+        },
+        start: "top 70%",
+        end: "bottom 30%",
+        toggleActions: "play none none none",
+        fastScrollEnd: true,
+        invalidateOnRefresh: true,
+      });
+    }
   }, []);
 
   return (

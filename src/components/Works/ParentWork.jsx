@@ -12,23 +12,24 @@ const data = [
     topic: "Expense Tracker",
     projectName: "Expense Tracker",
   },
+
   {
     link: "https://www.shutterstock.com/image-photo/beautiful-pastel-peachy-gerbera-flowers-600nw-2398912687.jpg",
-    anchor: "https://abhishek-end.github.io/lezrav-frontend/",
-    topic: "LaZarev Agency ",
-    projectName: "LaZarev Agency Recreate",
+    anchor: "https://apple-3d-omega.vercel.app/",
+    topic: "3D iPhone 15 pro ",
+    projectName: "3D Iphone 15 pro Three.js",
   },
   {
     link: "https://img.freepik.com/free-photo/beautiful-purple-flowers-vase_23-2149446785.jpg?size=626&ext=jpg&ga=GA1.1.344882661.1728764257&semt=ais_hybrid-rr-similar",
-    anchor: "Portfolio",
+    anchor: "https://ab4ishekportfolio.vercel.app",
     topic: "Personal Portfolio",
     projectName: "Portfolio",
   },
   {
     link: "https://img.freepik.com/free-photo/front-view-daisy-flower-stand-with-copy-space_23-2149270717.jpg?semt=ais_hybrid",
-    anchor: "",
-    topic: "Loading...",
-    projectName: "NOT LISTED YET",
+    anchor: "https://abhishek-end.github.io/lezrav-frontend/",
+    topic: "LaZarev Agency ",
+    projectName: "LaZarev Agency ",
   },
 ];
 

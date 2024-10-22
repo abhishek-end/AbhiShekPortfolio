@@ -12,23 +12,24 @@ const data = [
     topic: "Expense Tracker",
     projectName: "Expense Tracker",
   },
+
   {
     link: "https://www.shutterstock.com/image-photo/beautiful-pastel-peachy-gerbera-flowers-600nw-2398912687.jpg",
-    anchor: "https://abhishek-end.github.io/lezrav-frontend/",
-    topic: "LaZarev Agency ",
-    projectName: "LaZarev Agency Recreate",
+    anchor: "https://apple-3d-omega.vercel.app/",
+    topic: "3D iPhone 15 pro ",
+    projectName: "3D Iphone 15 pro Three.js",
   },
   {
     link: "https://img.freepik.com/free-photo/beautiful-purple-flowers-vase_23-2149446785.jpg?size=626&ext=jpg&ga=GA1.1.344882661.1728764257&semt=ais_hybrid-rr-similar",
-    anchor: "",
-    topic: "Loading...",
-    projectName: "NOT LISTED YET",
+    anchor: "https://ab4ishekportfolio.vercel.app",
+    topic: "Personal Portfolio",
+    projectName: "Portfolio",
   },
   {
     link: "https://img.freepik.com/free-photo/front-view-daisy-flower-stand-with-copy-space_23-2149270717.jpg?semt=ais_hybrid",
-    anchor: "",
-    topic: "Loading...",
-    projectName: "NOT LISTED YET",
+    anchor: "https://abhishek-end.github.io/lezrav-frontend/",
+    topic: "LaZarev Agency ",
+    projectName: "LaZarev Agency ",
   },
 ];
 
@@ -36,30 +37,39 @@ const ParentWork = () => {
   const imageRefs = useRef([]);
 
   useEffect(() => {
-    if (imageRefs.current.length > 0) {
-      ScrollTrigger.batch(imageRefs.current, {
-        onEnter: (batch) => {
-          gsap.to(batch, {
+    const animations = imageRefs.current.map((ref, index) => {
+      if (ref) {
+        return gsap.fromTo(
+          ref,
+          {
+            x: "-100%",
+            opacity: 0,
+          },
+          {
             x: "0%",
+            width: "100%",
             opacity: 1,
             duration: 1.5,
             ease: "power4.out",
-            stagger: 0.1,
-          });
-        },
-        start: "top 70%",
-        end: "bottom 30%",
-        toggleActions: "play none none none",
-        fastScrollEnd: true,
-        invalidateOnRefresh: true,
-      });
-    }
+            scrollTrigger: {
+              trigger: ref,
+              start: "top 70%",
+              end: "bottom 30%",
+              toggleActions: "play none none none",
+              fastScrollEnd: true,
+              invalidateOnRefresh: true,
+            },
+          }
+        );
+      }
+      return null;
+    });
   }, []);
 
   return (
     <>
       <div className='min-h-screen w-full text-white flex items-center justify-evenly'>
-        <div className='w-full max-w-7xl h-full grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div className='w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-4'>
           {data.map((items, index) => (
             <div key={index} ref={(el) => (imageRefs.current[index] = el)}>
               <MainWork

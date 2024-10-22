@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
-// import  from "./useCursor";
-import Circle from "./../components/Circle.jsx";
-import GetInTouch from "./../components/GetInTouch.jsx";
-import Footer from "./../components/Footer.jsx";
-import Language from "../components/Language.jsx";
+import React, { Suspense } from "react";
+
+import { Language, GetInTouch, Footer, Circle } from "../Links/Links";
 const About = () => {
   return (
     <>
       <div className='container mx-auto'>
-        <Language/> 
-        <GetInTouch />
-        <Footer />
+        <Suspense fallback={<div>Loading</div>}>
+          <Language />
+          <GetInTouch />
+          <Footer />
+        </Suspense>
       </div>
       <Circle />
     </>

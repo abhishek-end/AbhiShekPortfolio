@@ -82,7 +82,7 @@ const Navbar = () => {
         >
           <a
             href={
-              "https://drive.google.com/file/d/1KhZ5DJcq8TJedxkizEGpv8k8KRsiIQe3/view?usp=sharing"
+              "https://drive.google.com/file/d/1pXYq1z53vyuk3x9HoCn4kbHDvt49yaaF/view?usp=sharing"
             }
             download='abhishek_yadav_resume.pdf'
             className='md:text-xl lg:text-xl sm:text-sm text-xl text-[#fac230] font-bold  underline-animation  font-mono'

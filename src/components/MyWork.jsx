@@ -7,19 +7,20 @@ import { ScrollTrigger } from "gsap/all";
 const MyWork = () => {
   const data = [
     {
-      icon: "https://www.salesforce.com/nl/blog/wp-content/uploads/sites/18/2019/09/ai-blog.jpg",
       text: "Lazarev Website Agencey ",
       link: "https://abhishek-end.github.io/lezrav-frontend/",
     },
     {
-      icon: "https://www.medusa.jewelry/cdn/shop/products/rolex-cosmograph-daytona-40mm-meteorite-gold-montre-or-jaune-bijoux-medusa-homme-quebec-canada-415_800x.jpg?v=1679436438",
-      text: "ROLEX WATCH Recreated",
-      link: "https://abhishek-end.github.io/rolexWatch/",
+      text: "Expense Tracker F.Stack",
+      link: "https://expense-traker-six.vercel.app/",
     },
     {
-      icon: "https://t4.ftcdn.net/jpg/04/01/79/63/360_F_401796363_cC2yOhHHGT0qhdO6CPFt40VptyHaMUuo.jpg",
       text: "Personal Portfolio",
       link: "ab4ishekportfolio.vercel.app",
+    },
+    {
+      text: "iPhone 15 pro 3D",
+      link: "https://apple-3d-omega.vercel.app/",
     },
   ];
   const textRef = useRef([]);
@@ -84,7 +85,7 @@ const MyWork = () => {
             <LinkItem text={item.text} link={item.link} />
           </div>
         ))}
-        <div className='mt-5 md:px-6'>
+        <div className='mt-10 md:px-6'>
           <WorkButton link='/work' text='Work' />
         </div>
       </div>

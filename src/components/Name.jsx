@@ -7,7 +7,7 @@ const Name = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
   const { setIsTouchingLink } = useCursor();
-  const [randomText, setRandomText] = useState("Lov?");
+  const [randomText, setRandomText] = useState("♥");
 
   const letters = "abcdefghijklmnopqrstuvwxyz";
   const nameRef = useRef([]);
@@ -47,12 +47,12 @@ const Name = () => {
 
     setTimeout(() => {
       clearInterval(intervalId);
-      setRandomText("L♥ves");
+      setRandomText("Best");
     }, 180);
   };
 
   const handleClick = () => {
-    if (randomText === "Lov?" || randomText === "Loves") {
+    if (randomText === "♥" || randomText === "Loves") {
       scrambleText();
     }
   };
@@ -104,7 +104,7 @@ const Name = () => {
               className='mx-0 sm:mx-2 text-transparent  text-stroke text-xl sm:text-2xl lg:text-4xl xl:text-5xl capitalize'
               ref={(el) => (spanRef.current[1] = el)}
             >
-              creating Designs
+              Manual Tester (QA)
             </span>
           </div>
         </div>

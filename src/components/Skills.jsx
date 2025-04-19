@@ -114,8 +114,8 @@ const Skills = () => {
     );
   }, []);
   return (
-    <div className=' h-full w-full flex flex-col  sm:flex-row  md:mt-52 relative p-4 mt-24 gap-10'>
-      <div className='sm:w-1/2 overflow-hidden flex flex-col'>
+    <div className=' h-full w-full flex flex-col  sm:flex-row  md:mt-52 relative p-4 mt-24 gap-10 '>
+      <div className='sm:w-1/2 overflow-visible flex flex-col '>
         <div className=' w-full overflow-hidden   flex items-center md:h-1/3 mb-5 '>
           <h1
             className='text-white text-6xl md:text-7xl  font-extrabold  font-oswald uppercase lg:py-0 p-2'
@@ -130,12 +130,13 @@ const Skills = () => {
             </sub>
           </h1>
         </div>
-        <div className='flex gap-3  justify-center text-white  w-full md:text-3xl  text-xl flex-col font-bold  rounded-md   font-ariata h-full md:w-3/5'>
+        <div className='flex gap-3 justify-center text-white w-full md:text-3xl text-xl flex-col font-bold rounded-md font-ariata h-full md:w-full'>
+          {/* Block 1: BlackBox, Functional, System */}
           <div
-            className='flex w-full p-2 items-center  text-white gap-1'
+            className='flex w-full p-2 items-center text-white gap-1'
             ref={(el) => (textRef.current[1] = el)}
           >
-            {["HTML", "CSS", "Javascript"].map((skill, index) => (
+            {["BlackBox", "Functional", "System"].map((skill, index) => (
               <React.Fragment key={index}>
                 <h4
                   ref={(el) => (h4Refs.current[index] = el)}
@@ -150,17 +151,18 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
+
+          {/* Block 2: Smoke, Sanity, Regression */}
           <div
-            className='flex items-center justify-start  gap-1 text-transparent text-white  p-1 '
+            className='flex items-center justify-start gap-1 text-white p-1'
             ref={(el) => (textRef.current[2] = el)}
           >
-            {["SASS", "Tailwind", "GSAP"].map((skill, index) => (
+            {["Smoke", "Sanity", "Regression"].map((skill, index) => (
               <React.Fragment key={index + 3}>
                 <h4
                   ref={(el) => (h4Refs.current[index + 3] = el)}
                   onMouseEnter={() => handleMouseEnter(index + 3)}
                   onMouseLeave={handleMouseLeave}
-                  className=''
                 >
                   {skill}
                 </h4>
@@ -172,11 +174,13 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
+
+          {/* Block 3: SDLC, STLC, BLC */}
           <div
-            className='flex items-center justify-start  gap-1 text-transparent text-white  p-1 '
+            className='flex items-center justify-start gap-1 text-white p-1'
             ref={(el) => (textRef.current[3] = el)}
           >
-            {["MongoDB", "Express.js", "React.jS"].map((skill, index) => (
+            {["SDLC", "STLC", "BLC"].map((skill, index) => (
               <React.Fragment key={index + 6}>
                 <h4
                   ref={(el) => (h4Refs.current[index + 6] = el)}
@@ -194,25 +198,54 @@ const Skills = () => {
               </React.Fragment>
             ))}
           </div>
+
+          {/* Block 4: Agile, Scrum, JIRA */}
           <div
-            className='flex items-center justify-start gap-1 p-2  '
-            ref={(el) => (textRef.current[4] = el)}
-          >
-            <h4
-              ref={(el) => (h4Refs.current[9] = el)}
-              onMouseEnter={() => handleMouseEnter(9)}
-              onMouseLeave={handleMouseLeave}
-              className='capitalize'
-            >
-              Node.js
-            </h4>
-          </div>
-          {/* <div
-            className='flex items-center justify-start p-2'
+            className='flex items-center justify-start gap-1 text-white p-1'
             ref={(el) => (textRef.current[5] = el)}
           >
-            <h1>& Loading...</h1>
-          </div> */}
+            {["Agile", "Scrum", "JIRA"].map((skill, index) => (
+              <React.Fragment key={index + 9}>
+                <h4
+                  ref={(el) => (h4Refs.current[index + 9] = el)}
+                  onMouseEnter={() => handleMouseEnter(index + 9)}
+                  onMouseLeave={handleMouseLeave}
+                  className='capitalize'
+                >
+                  {skill}
+                </h4>
+                {index < 2 && (
+                  <span ref={(el) => (spanRefs.current[index + 7] = el)}>
+                    —
+                  </span>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+
+          {/* Block 5: Test Designs */}
+          <div
+            className='flex items-center justify-start gap-1'
+            ref={(el) => (textRef.current[4] = el)}
+          >
+            {["Zephyr","Test Designs", "Retesting"].map((skill, index) => (
+              <React.Fragment key={index + 12}>
+                <h4
+                  ref={(el) => (h4Refs.current[index + 12] = el)}
+                  onMouseEnter={() => handleMouseEnter(index + 12)}
+                  onMouseLeave={handleMouseLeave}
+                  className='capitalize'
+                >
+                  {skill}
+                </h4>
+                {index < 2 && (
+                  <span ref={(el) => (spanRefs.current[index + 10] = el)}>
+                    —
+                  </span>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
         </div>
       </div>
       <div className='right-side-div h-full  w-full relative flex justify-center items-center mt-20 lg:mt-0  md:w-2/5  rounded-r-lg overflow-hidden bg-black opacity-70'>
@@ -222,27 +255,6 @@ const Skills = () => {
           alt=''
           className='w-full h-full object-cover border-8 rounded-2xl border-[#fac243] '
         />
-        {[
-          "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846684/my-images/pxd9xf5bvohyjt1q7wbx.webp",
-          "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr9t5cstaou0yjbh1gffj.gif",
-          "https://media2.giphy.com/media/SvFocn0wNMx0iv2rYz/200w.gif?cid=6c09b952rw74ryzomkjlm8ph0v354blgc8ugtd87iemeddrk&ep=v1_gifs_search&rid=200w.gif&ct=g",
-          "https://res.cloudinary.com/dlonoxpli/image/upload/v1723846935/my-images/qgv9mqryxsyrevcy8fdh.gif",
-          "https://www.devonblog.com/wp-content/uploads/2022/06/tailwind-thumb.jpg",
-          "https://res.cloudinary.com/dlonoxpli/image/upload/v1723845609/my-images/p2sh0isoxwdlaj3nd9fd.gif",
-          "https://shorturl.at/QFNH9",
-          "https://colaninfotech.com/wp-content/uploads/2021/09/expressjs.gif",
-          "https://res.cloudinary.com/dlonoxpli/image/upload/c_crop,g_center,h_0.88,w_0.55/my-images/eeeoshcfliwsezndnmxt.jpg",
-          "https://user-images.githubusercontent.com/97989643/224550089-f2541ade-c5c6-4afa-8538-51a8dda4e23b.gif",
-        ].map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`gif for skill ${index}`}
-            className={`w-full h-full absolute transition-opacity duration-300 rounded-2xl border border-[#fac243] ${
-              isHoverActive === index ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        ))}
       </div>
     </div>
   );

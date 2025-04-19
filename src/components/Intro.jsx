@@ -76,16 +76,16 @@ const Intro = () => {
         <div className='text-white  text-7xl font-bold font-oswald  md:h-fit overflow-hidden'>
           <h4 ref={(el) => (helloWorldRef.current[0] = el)}>
             HELLO <br />
-            WORLD
+            BUG 🐛
           </h4>
         </div>
-        <div className=' text-white text-xl flex rounded-lg lg:p-2 w-11/12 lg:w-full whitespace-wrap font-spacemono   mt-12 lg:mt-4 select-none  '>
+        <div className=' text-white text-xl flex rounded-lg  w-11/12 lg:w-full whitespace-wrap font-spacemono   mt-12 lg:mt-4 select-none  bg-'>
           <h4
-            className='lg:w-1/2  h-full  lg:p-2 px-2 rounded-lg lg:mt-0 mb-5'
+            className='lg:w-1/2  h-full lg:py-2  px-2 rounded-lg lg:mt-0 mb-5'
             ref={bioRef}
           >
-            "Hiii, I'm Abhishek, a Full Stack Developer who loves design and
-            crafts websites with engaging animations." {"(;"}
+            Hiii, I'm Abhishek, a QA Tester who lives to break things—so users
+            don’t have to {"(;"}
           </h4>
         </div>
         <div

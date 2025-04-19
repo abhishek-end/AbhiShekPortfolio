@@ -82,9 +82,9 @@ const Navbar = () => {
         >
           <a
             href={
-              "https://drive.google.com/file/d/1pXYq1z53vyuk3x9HoCn4kbHDvt49yaaF/view?usp=sharing"
+              "https://drive.google.com/file/d/1cUON12cnBZSkK6j8nsXBY4xT55BkUypS/view?usp=sharing"
             }
-            download='abhishek_yadav_resume.pdf'
+            download='abhishek_yadav_manual.pdf'
             className='md:text-xl lg:text-xl sm:text-sm text-xl text-[#fac230] font-bold  underline-animation  font-mono'
             onMouseOver={handleTouch}
             onMouseLeave={removeTouch}

@@ -7,20 +7,21 @@ import { ScrollTrigger } from "gsap/all";
 const MyWork = () => {
   const data = [
     {
-      text: "Lazarev Website Agencey ",
-      link: "https://abhishek-end.github.io/lezrav-frontend/",
+      text: "Expanse Tracker Manual Testing",
+      link: "https://github.com/abhishek-end/ManualTestsDocs",
     },
     {
-      text: "Expense Tracker F.Stack",
-      link: "https://expense-traker-six.vercel.app/",
+      text: "Open cart open source project Manual Testing",
+      link: "https://github.com/abhishek-end/OpenCart",
+    },
+
+    {
+      text: "VLC Android App Testing ",
+      link: "https://github.com/abhishek-end/VLC-Andriod-Manual-Testing",
     },
     {
-      text: "Personal Portfolio",
+      text: "Personal Portfolio (My creation)",
       link: "ab4ishekportfolio.vercel.app",
-    },
-    {
-      text: "iPhone 15 pro 3D",
-      link: "https://apple-3d-omega.vercel.app/",
     },
   ];
   const textRef = useRef([]);

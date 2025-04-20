@@ -7,29 +7,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 const data = [
   {
-    link: "https://img.freepik.com/free-photo/aesthetic-spring-wallpaper-with-carnation-high-angle_23-2149446748.jpg?w=740&t=st=1728764641~exp=1728765241~hmac=a517357ae608ff4ab467dcd3dccbc9b39daf21c5be2ca51c44e7b358ed0b4090",
-    anchor: "https://expense-traker-six.vercel.app/",
-    topic: "Expense Tracker",
+    link: "",
+    anchor: "https://github.com/abhishek-end/ManualTestsDocs",
+    topic: "Expense Tracker Web App Testing",
     projectName: "Expense Tracker",
   },
 
   {
-    link: "https://www.shutterstock.com/image-photo/beautiful-pastel-peachy-gerbera-flowers-600nw-2398912687.jpg",
-    anchor: "https://apple-3d-omega.vercel.app/",
-    topic: "3D iPhone 15 pro ",
-    projectName: "3D Iphone 15 pro Three.js",
+    link: "",
+    anchor: "https://github.com/abhishek-end/OpenCart",
+    topic: "OpenCart Open Source Testing",
+    projectName: "OpenCart",
+  },
+
+  {
+    link: "",
+    anchor: "https://github.com/abhishek-end/VLC-Andriod-Manual-Testing",
+    topic: "VLC Android App Testing",
+    projectName: "VLC android App Testing",
   },
   {
-    link: "https://img.freepik.com/free-photo/beautiful-purple-flowers-vase_23-2149446785.jpg?size=626&ext=jpg&ga=GA1.1.344882661.1728764257&semt=ais_hybrid-rr-similar",
+    link: "",
     anchor: "https://ab4ishekportfolio.vercel.app",
     topic: "Personal Portfolio",
     projectName: "Portfolio",
-  },
-  {
-    link: "https://img.freepik.com/free-photo/front-view-daisy-flower-stand-with-copy-space_23-2149270717.jpg?semt=ais_hybrid",
-    anchor: "https://abhishek-end.github.io/lezrav-frontend/",
-    topic: "LaZarev Agency ",
-    projectName: "LaZarev Agency ",
   },
 ];
 

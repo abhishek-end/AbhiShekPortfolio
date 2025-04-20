@@ -11,7 +11,7 @@ const MainWork = ({ link, anchor, topic, projectName }) => {
     <>
       <div className=' w-full text-white scaleX '>
         <div className='w-full  h-full relative group p-2 '>
-          <h1 className='absolute top-36 sm:-left-4  text-5xl  opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-nhaas font-bold z-50  pointer-events-none'>
+          <h1 className='absolute top-36 sm:-left-4  text-4xl  opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-nhaas  z-50  pointer-events-none'>
             {topic}
           </h1>
           <a

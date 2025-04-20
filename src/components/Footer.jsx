@@ -19,11 +19,11 @@ const Footer = () => {
     className: "underline-animation",
   };
   return (
-    <div className='w-full h-[8vh] border-t-2 lg:flex text-center lg:justify-between   lg:px-0 '>
-      <div className='resume opacity-0 lg:opacity-100  text-white text-xs font-mono lg:font-extrabold flex items-center  lg:text-2xl md:text-xl uppercase'>
+    <div className='w-full h-[8vh] border-t-2 lg:flex text-center lg:justify-end   lg:px-0 '>
+      {/* <div className='resume opacity-0 lg:opacity-100  text-white text-xs font-mono lg:font-extrabold flex items-center  lg:text-2xl md:text-xl uppercase'>
         buy me a coffe
         <FontAwesomeIcon icon={faMugHot} className='mb-1 mx-2' />
-      </div>
+      </div> */}
       <div className='text-white flex justify-center items-center text-lg'>
         <div className='flex items-start font-oswald gap-4'>
           <a

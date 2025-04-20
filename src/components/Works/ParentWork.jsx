@@ -7,27 +7,27 @@ gsap.registerPlugin(ScrollTrigger);
 
 const data = [
   {
-    link: "",
+    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175604/expanse_ork3l7.jpg",
     anchor: "https://github.com/abhishek-end/ManualTestsDocs",
     topic: "Expense Tracker Web App Testing",
     projectName: "Expense Tracker",
   },
 
   {
-    link: "",
+    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175375/16-1500x1000_abhtm9.png",
     anchor: "https://github.com/abhishek-end/OpenCart",
     topic: "OpenCart Open Source Testing",
     projectName: "OpenCart",
   },
 
   {
-    link: "",
+    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175219/VLC07_m7jlnf.jpg",
     anchor: "https://github.com/abhishek-end/VLC-Andriod-Manual-Testing",
     topic: "VLC Android App Testing",
     projectName: "VLC android App Testing",
   },
   {
-    link: "",
+    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175262/Capture_virmd3.jpg",
     anchor: "https://ab4ishekportfolio.vercel.app",
     topic: "Personal Portfolio",
     projectName: "Portfolio",

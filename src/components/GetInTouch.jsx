@@ -10,9 +10,9 @@ const GetInTouch = () => {
   const handleMouseEnter = () => setIsTouchingLink(true);
   const handleMouseLeave = () => setIsTouchingLink(false);
   const handleEmail = () => {
-    const main = "abhishekyadav49534";
-    const last = ".gmail.com";
-    window.location.href = `mailto:${main}+${last}`;
+    const main = "qa.abhishek.dv";
+    const last = "@gmail.com";
+    window.location.href = `mailto:${main}${last}`;
   };
   const handlePhone = () => {
     const countryCode = "+91";
@@ -82,9 +82,12 @@ const GetInTouch = () => {
             <div className='w-full h-full border-t py-4 flex justify-center items-center lg:text-5xl gap-4'>
               <div {...eventHandlers}>
                 <FontAwesomeIcon icon={faEnvelope} className='mx-4' />
-                <button onClick={handleEmail}>
-                  abhishekyadav49534@gmail.com
-                </button>
+                <a
+                  href='mailto:qa.abhishek.dv@gmail.com'
+                  className='underline-animation scaleX'
+                >
+                  qa.abhishek.dv@gmail.com
+                </a>
               </div>
             </div>
             <div className='w-full h-full border-t py-4 flex justify-center items-center lg:text-5xl '>

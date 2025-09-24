@@ -6,21 +6,29 @@ import LinkItem from "./Link.jsx";
 const MyWork = () => {
   const data = [
     {
-      text: "Expense Tracker Web App Testing",
-      link: "https://github.com/abhishek-end/ManualTestsDocs",
+      text: "Machine Dalal",
+      link: "https://machinedalal.com/",
     },
     {
-      text: "OpenCart Open Source Testing",
-      link: "https://github.com/abhishek-end/OpenCart",
+      text: "Centurion Anesthesia",
+      link: "https://stagingadmin.centurionanesthesia.com/auth/login",
     },
 
     {
-      text: "VLC Android App Testing",
+      text: "VLC Android App Testing ",
       link: "https://github.com/abhishek-end/VLC-Andriod-Manual-Testing",
     },
     {
-      text: "Tester Portfolio",
+      text: "Personal Portfolio",
       link: "ab4ishekportfolio.vercel.app",
+    },
+    {
+      text: "OpenCart",
+      link: "https://github.com/abhishek-end/OpenCart",
+    },
+    {
+      text: "Expanse Tracker",
+      link: "https://github.com/abhishek-end/ManualTestsDocs",
     },
   ];
   const textRef = useRef([]);
@@ -76,7 +84,7 @@ const MyWork = () => {
       className=' w-full text-white h-screen   grid lg:grid-row-1 sm:mt-28 items-center transition-all
     p-5'
     >
-      <div className='text-white text-4xl uppercase lg:text-8xl h-1/2  font-extrabold whitespace-wrap w-full grid items-end overflow-hidden'>
+      <div className='text-white text-4xl uppercase lg:text-8xl h-full  font-extrabold whitespace-wrap w-full grid items-end overflow-hidden'>
         <h4 ref={workRef}>WORK</h4>
       </div>
       <div className='w-full h-full  lg:mt-10 '>

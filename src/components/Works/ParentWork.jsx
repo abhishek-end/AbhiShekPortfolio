@@ -7,6 +7,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const data = [
   {
+    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1758701559/WhatsApp_Image_2025-09-24_at_13.42.14_fea3a178_ltjih8.jpg",
+    anchor: "https://stagingadmin.centurionanesthesia.com/",
+    topic: "Centurion Anesthesia",
+    projectName: "CenturionAnesthesia",
+  },
+  {
+    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1758702004/WhatsApp_Image_2025-09-24_at_13.49.42_6ad5bfe2_n2hznz.jpg",
+    anchor: "https://machinedalal.com/",
+    topic: "Machine Dalal",
+    projectName: "Machine Dalal",
+  },
+  {
     link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175604/expanse_ork3l7.jpg",
     anchor: "https://github.com/abhishek-end/ManualTestsDocs",
     topic: "Expense Tracker Web App Testing",
@@ -20,18 +32,12 @@ const data = [
     projectName: "OpenCart",
   },
 
-  {
-    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175219/VLC07_m7jlnf.jpg",
-    anchor: "https://github.com/abhishek-end/VLC-Andriod-Manual-Testing",
-    topic: "VLC Android App Testing",
-    projectName: "VLC android App Testing",
-  },
-  {
-    link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175262/Capture_virmd3.jpg",
-    anchor: "https://ab4ishekportfolio.vercel.app",
-    topic: "Personal Portfolio",
-    projectName: "Portfolio",
-  },
+  // {
+  //   link: "https://res.cloudinary.com/dht6a9xgc/image/upload/v1745175219/VLC07_m7jlnf.jpg",
+  //   anchor: "https://github.com/abhishek-end/VLC-Andriod-Manual-Testing",
+  //   topic: "VLC android App Testing",
+  //   projectName: "VLC android App Testing",
+  // },
 ];
 
 const ParentWork = () => {

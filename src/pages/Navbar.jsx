@@ -90,8 +90,9 @@ const Navbar = () => {
             onMouseLeave={removeTouch}
             ref={(el) => (textRef.current[1] = el)}
           >
-            /resume
+            /resume{" "}
           </a>
+          <h2 className='text-white text-xs'>Last Updated Sept 2025</h2>
         </div>
       </div>
     </nav>
